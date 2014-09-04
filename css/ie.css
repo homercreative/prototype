@@ -4110,8 +4110,8 @@ header .search {
 .search {
   clear: both;
   padding: 1em 0 1em 0;
-  background-color: #777777;
-  border-bottom: 1px solid #777777;
+  background-color: #969696;
+  border-bottom: 1px solid #969696;
 }
 .search:before, .search:after {
   content: " ";

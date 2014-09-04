@@ -64,8 +64,8 @@ header {
   clear:both;
   padding:1em 0 1em 0;
   @include clearfix;
-  background-color:$gray-light;
-  border-bottom:1px solid $gray-light;
+  background-color: #969696;
+  border-bottom:1px solid #969696;
   form {
     width: 100%
   }
