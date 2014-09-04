@@ -1,0 +1,76 @@
+header {
+  padding: 20px 20px 0 20px;
+
+  .identity {
+    float:left;
+    margin:0;
+    a {
+      text-decoration: none;
+      display: block;
+      width: 263px;
+      height: 88px;
+      float: left;
+
+    }
+  }
+
+  .parent-id {
+    float:right;
+    margin: 0;
+    a {
+      text-decoration: none;
+      display: block;
+      width: 88px;
+      height: 88px;
+      float: left;
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+      background-image: url('../img/bsu-logo.png');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      clear: left;
+    }
+  }
+  nav {
+//    float:right;
+    ul {
+//      float:right;
+
+    }
+    li {
+//      display: inline-block;
+    }
+    a {
+//      color: $white;
+//      text-decoration: none;
+//      font-size: 20px;
+//      text-transform: uppercase;
+//      padding: 20px;
+//      float: left;
+    }
+  }
+
+  .search {
+    clear:both;
+    padding:12% 20% 12% 20%;
+    @include clearfix;
+    form {
+      width: 100%
+    }
+    input {
+      border:none;
+      float: left;
+      padding: 15px;
+    }
+    .entry {
+      width:90%;
+    }
+    .submit {
+      width:10%;
+
+    }
+  }
+}
