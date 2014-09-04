@@ -4162,6 +4162,7 @@ header .search {
   width: 100%;
   float: left;
   height: auto;
+  color: #333;
 }
 .result h3 {
   color: white;
