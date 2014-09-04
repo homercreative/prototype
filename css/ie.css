@@ -4925,10 +4925,13 @@ header .parent-id a {
   background-position: 50% 50%;
   clear: left;
 }
+header .search {
+  padding: 12% 20% 12% 20%;
+}
 
 .search {
   clear: both;
-  padding: 12% 20% 12% 20%;
+  padding: 1em 0 0 0;
 }
 .search:before, .search:after {
   content: " ";
@@ -4950,6 +4953,25 @@ header .parent-id a {
 }
 .search .submit {
   width: 10%;
+}
+
+aside {
+  background-color: #888888;
+  background-color: #888888;
+}
+aside .categories li {
+  width: 100%;
+  float: left;
+  display: block;
+  border-bottom: 2px solid #000;
+}
+aside .categories a {
+  width: 100%;
+  background-color: #777777;
+  color: white;
+}
+aside .categories a:hover {
+  background-color: #333333;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

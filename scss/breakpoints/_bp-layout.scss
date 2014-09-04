@@ -78,7 +78,7 @@ header {
   }
 }
 aside{
-  @include rgba('#888', 1);
+  @include rgba(#888888, 1);
   .categories{
       li{
         width:100%;
@@ -91,7 +91,7 @@ aside{
         background-color:$gray-light;
         color:$white;
         &:hover{
-          background-color:$gray-dar;
+          background-color:$gray-dark;
 
         }
       }
