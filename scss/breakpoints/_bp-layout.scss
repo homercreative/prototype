@@ -110,7 +110,7 @@ header {
   width:100%;
   float:left;
   height:auto;
-  background-color: lighten(rgba(34,43,65,1), 50);
+
   h3{
     color:$white;
   }
@@ -124,14 +124,29 @@ header {
 }
 .btn{
   padding:1em;
-  height:100px;
-  width:70px;
+  width:100%;
+
   border:none;
   background-color:#222b41;
   color:$white;
 }
 .buttons{
   float:right;
+  color:$white;
+  height:100px;
+  padding:0;
+  .btn{
+    height:100px;
+    border:none;
+    background-color:#222b41;
+    &:hover{
+      background-color: lighten(#222b41, 30);
+    }
+    &:focus{
+      border:none;
+      outline:none;
+    }
+  }
 }
 .extra{
   background-color:#ECECEC;
@@ -144,6 +159,6 @@ header {
   }
 }
 .title{
-  float:left;
-  width:100%;
+  background-color: lighten(rgba(34,43,65,1), 50);
+  height:100px;
 }
