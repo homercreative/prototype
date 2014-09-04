@@ -1,3 +1,4 @@
+
 header {
   padding: 20px 20px 0 20px;
 
@@ -54,13 +55,17 @@ header {
   }
   .search{
     padding:12% 20% 12% 20%;
+    border-bottom:none;
+    background-color: none;
   }
 }
 
 .search {
   clear:both;
-  padding:1em 0 0 0;
+  padding:1em 0 1em 0;
   @include clearfix;
+  background-color:$gray-light;
+  border-bottom:1px solid $gray-light;
   form {
     width: 100%
   }
@@ -77,23 +82,68 @@ header {
 
   }
 }
-aside{
-  @include rgba(#888888, 1);
+.sidemenu{
+  background-color:rgba(34,43,65,1);
+  padding:0;
+  height:100%;
   .categories{
       li{
         width:100%;
         float:left;
         display:block;
-        border-bottom:2px solid #000;
       }
       a{
+        float:left;
         width:100%;
-        background-color:$gray-light;
+        display:block;
         color:$white;
+        background-color:rgba(34,43,65,1);
+        padding:1em;
         &:hover{
-          background-color:$gray-dark;
-
+          background-color:lighten(rgba(34,43,65,1), 20);
         }
       }
   }
+}
+.result{
+  margin-top:1em;
+  width:100%;
+  float:left;
+  height:auto;
+  background-color: lighten(rgba(34,43,65,1), 50);
+  h3{
+    color:$white;
+  }
+
+}
+.content{
+  padding:0;
+}
+.results{
+  padding:0;
+}
+.btn{
+  padding:1em;
+  height:100px;
+  width:70px;
+  border:none;
+  background-color:#222b41;
+  color:$white;
+}
+.buttons{
+  float:right;
+}
+.extra{
+  background-color:#ECECEC;
+  display: none;
+  overflow:hidden;
+  height:250px;
+  padding:1em 0;
+  img{
+    width:100%;
+  }
+}
+.title{
+  float:left;
+  width:100%;
 }
