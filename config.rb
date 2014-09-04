@@ -14,7 +14,7 @@ javascripts_dir = "js"
 # docs_dir = "assets/docs"
 # plugins_dir = "assets/plugins"
 
-
+http_images_path = "http://homercreative.github.io/prototype"
 
 # Output style and comments
 # -----------------------------------------------------------------------------
