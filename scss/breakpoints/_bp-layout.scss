@@ -52,25 +52,25 @@ header {
 //      float: left;
     }
   }
+}
 
-  .search {
-    clear:both;
-    padding:12% 20% 12% 20%;
-    @include clearfix;
-    form {
-      width: 100%
-    }
-    input {
-      border:none;
-      float: left;
-      padding: 15px;
-    }
-    .entry {
-      width:90%;
-    }
-    .submit {
-      width:10%;
+.search {
+  clear:both;
+  padding:12% 20% 12% 20%;
+  @include clearfix;
+  form {
+    width: 100%
+  }
+  input {
+    border:none;
+    float: left;
+    padding: 15px;
+  }
+  .entry {
+    width:90%;
+  }
+  .submit {
+    width:10%;
 
-    }
   }
 }
