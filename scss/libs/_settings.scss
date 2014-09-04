@@ -130,8 +130,8 @@ $container-lg:                 $container-large-desktop ;
 $body-bg:                    $white;
 
 //== Header
-$header-bg:                  rgba(0,0,0,0);
-$header-bg-image:            url('../img/main.jpg') no-repeat 0 0;
+$header-bg:                  rgba(150,150,150,1);
+$header-bg-image:            'img-src';
 $header-height:              auto;
 $header-width:               100%;
 $header-font-weight:         500;

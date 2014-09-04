@@ -319,7 +319,7 @@ a:hover {
 }
 
 header {
-  background: rgba(0, 0, 0, 0) url("../img/main.jpg") no-repeat 0 0;
+  background-color: #969696;
   height: auto;
   font-weight: 500;
   color: #333333;
