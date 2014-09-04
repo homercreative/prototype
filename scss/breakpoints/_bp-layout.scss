@@ -52,11 +52,14 @@ header {
 //      float: left;
     }
   }
+  .search{
+    padding:12% 20% 12% 20%;
+  }
 }
 
 .search {
   clear:both;
-  padding:12% 20% 12% 20%;
+  padding:1em 0 0 0;
   @include clearfix;
   form {
     width: 100%
@@ -72,5 +75,25 @@ header {
   .submit {
     width:10%;
 
+  }
+}
+aside{
+  @include rgba('#888', 1);
+  .categories{
+      li{
+        width:100%;
+        float:left;
+        display:block;
+        border-bottom:2px solid #000;
+      }
+      a{
+        width:100%;
+        background-color:$gray-light;
+        color:$white;
+        &:hover{
+          background-color:$gray-dar;
+
+        }
+      }
   }
 }
