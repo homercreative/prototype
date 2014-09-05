@@ -14,12 +14,12 @@
   // ======================
 
   var Modal = function (element, options) {
-    this.options        = options
-    this.$body          = $(document.body)
-    this.$element       = $(element)
+    this.options        = options;
+    this.$body          = $(document.body);
+    this.$element       = $(element);
     this.$backdrop      =
-    this.isShown        = null
-    this.scrollbarWidth = 0
+    this.isShown        = null;
+    this.scrollbarWidth = 0;
 
     if (this.options.remote) {
       this.$element
