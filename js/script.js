@@ -13,7 +13,8 @@ jQuery(document).ready(function(){
     $('#searchBtn').click(function(){
         var url = 'http://homercreative.github.io/prototype/search-results.html';
         var get = '?search=' + $('#searchText').text();
-        window.location.href = url + get + '';
+        console.log(url + get + '');
+        window.location.href = (url + get + '');
     });
 
 
