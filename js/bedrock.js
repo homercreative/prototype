@@ -11,6 +11,7 @@ jQuery(document).ready(function ($) {
     var owlCarousel = "js/plugins/owl.carousel.min.js";
     var content = $('.content');
 
+    var modal = "js/plugins/modal.js";
     // plugin function call
 
     var embed = /((http:\/\/(www\.google\.co.uk\/maps.*|maps\.google\.com\/maps\?.*|maps\.google\.com\/\?.*|maps\.google\.com\/maps\/ms\?.*|.*youtube\.com\/watch.*|.*\.youtube\.com\/v\/.*|youtu\.be\/.*|.*\.youtube\.com\/user\/.*|.*\.youtube\.com\/.*#.*\/.*|m\.youtube\.com\/watch.*|m\.youtube\.com\/index.*|.*\.youtube\.com\/profile.*|.*\.youtube\.com\/view_play_list.*|.*\.youtube\.com\/playlist.*|www\.youtube\.com\/embed\/.*))| (https:\/\/(www\.google\.co.uk\/maps.*|maps\.google\.com\/maps\?.*|maps\.google\.com\/\?.*|maps\.google\.com\/maps\/ms\?.*|.*youtube\.com\/watch.*|.*\.youtube\.com\/v\/.*|youtu\.be\/.*|.*\.youtube\.com\/user\/.*|.*\.youtube\.com\/.*#.*\/.*|m\.youtube\.com\/watch.*|m\.youtube\.com\/index.*|.*\.youtube\.com\/profile.*|.*\.youtube\.com\/view_play_list.*|.*\.youtube\.com\/playlist.*|www\.youtube\.com\/embed\/.*)))/i;
@@ -26,7 +27,9 @@ jQuery(document).ready(function ($) {
     getScript(modernizer);
     getScript(easing);
     getScript(slimScroll);
+    getScript(modal);
     getOwlCarousel(owlCarousel);
+
 
     // == Options
     // Un comment for full page
