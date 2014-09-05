@@ -10,16 +10,18 @@ jQuery(document).ready(function(){
         $('#cart').modal('hide');
         $('#export').modal('show');
     });
-    $('#searchBtn').click(function(){
+    $('#search').submit(function(e){
+        e.preventDefault();
         var url = 'http://homercreative.github.io/prototype/search-results.html';
-        var get = '?search=' + $('#searchText').text();
+        var get = '?search=' + $('#searchText').val();
         console.log(url + get + '');
         window.location.href = (url + get + '');
     });
 
 
     var searchString = getUrlParameter('search');
-    $('#searchText').text(searchString);
+    console.log(searchString);
+    $('#searchText').val(searchString);
 
     function getUrlParameter(sParam)
     {
