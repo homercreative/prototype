@@ -453,7 +453,7 @@
   @media (min-width: $screen-sm-min) {
     // Automatically set modal's width for larger viewports
     .modal-dialog {
-      width: $modal-md;
+      width: 60%;
       margin: 30px auto;
     }
     .modal-content {
@@ -496,6 +496,7 @@
     clip: rect(0,0,0,0);
     border: 0;
   }
+
 }
 
 @mixin fullpage{

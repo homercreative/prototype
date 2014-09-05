@@ -137,18 +137,34 @@ header {
   padding:0;
   .btn{
     height:100px;
-    border:none;
     background-color:#222b41;
     &:hover{
       background-color: lighten(#222b41, 30);
     }
-    &:focus{
-      border:none;
-      outline:none;
-    }
+  }
+}
+.btn{
+  border:none;
+  &:focus{
+    border:none;
+    outline:none;
+  }
+}
+.modal-header{
+  border-bottom: none;
+  min-height: inherit;
+  .modal-title{
+    line-height:inherit;
+  }
+}
+.modal-footer{
+  border:none;
+  .btn{
+    width:auto;
   }
 }
 .extra{
+  position:relative;
   background-color:#ECECEC;
   display: none;
   overflow:hidden;
@@ -160,4 +176,7 @@ header {
 .title{
   background-color: lighten(rgba(34,43,65,1), 50);
   height:100px;
+}
+.btn-top{
+  background-color:inherit;
 }

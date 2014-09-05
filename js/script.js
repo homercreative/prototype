@@ -6,4 +6,8 @@ jQuery(document).ready(function(){
         var element = $('#' + value);
         element.slideToggle();
     });
+    $('#exportButton').click(function(){
+        $('#cart').modal('hide');
+        $('#export').modal('show');
+    });
 });

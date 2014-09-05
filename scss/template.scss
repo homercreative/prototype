@@ -5,9 +5,10 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+@import "breakpoints/settings";
+
 // -- Framework
 @import "libs/reset";
-@import "libs/settings";
 @import "libs/mixins";
 @import "libs/placeholders";
 
@@ -15,6 +16,7 @@
 @import "libs/grid";
 @import "libs/forms";
 @import "libs/typography";
+@import "libs/tables";
 // -- end framework
 
 // -- Plugins

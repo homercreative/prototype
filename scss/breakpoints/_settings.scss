@@ -191,3 +191,18 @@ $modal-footer-border-color:           $gray-light;
 $modal-md:                            300px;
 $modal-sm:                            300px;
 $modal-lg:                            300px;
+
+// == Table
+
+$table-bg:                            $white;
+$table-cell-padding:                  0.5em;
+$table-border-color:                  $gray-lighter;
+$table-bg-hover:                      $gray-light;
+$table-bg-active:                     $gray;
+$state-success-bg:                    $brand-success;
+$state-info-bg:                       $brand-info;
+$state-warning-bg:                    $brand-danger;
+$state-danger-bg:                     $brand-warning;
+$state-primary-bg:                    $brand-primary;
+$table-condensed-cell-padding:        0.5em;
+$table-bg-accent:                     $gray-lighter;
