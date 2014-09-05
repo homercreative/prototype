@@ -11,9 +11,9 @@ jQuery(document).ready(function(){
         $('#export').modal('show');
     });
     $('#searchBtn').click(function(){
-        var root = 'http://homercreative.github.io/prototype/search-results.html';
+        var url = 'http://homercreative.github.io/prototype/search-results.html';
         var get = '?search=' + $('#searchText').text();
-        window.location.href = root + get;
+        window.location.href = url + get + '';
     });
 
 
