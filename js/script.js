@@ -20,8 +20,8 @@ jQuery(document).ready(function(){
 
 
     var searchString = getUrlParameter('search');
-    console.log(searchString);
-    $('#searchText').val(searchString);
+
+    $('#searchText').val(decodeURI(searchString));
 
     function getUrlParameter(sParam)
     {
