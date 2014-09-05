@@ -19,9 +19,12 @@ jQuery(document).ready(function(){
     });
 
 
-    var searchString = getUrlParameter('search');
+    var searchString = decodeURI(getUrlParameter('search'));
 
-    $('#searchText').val(decodeURI(searchString));
+    if(searchString != 'undefined'){
+        $('#searchText').val(searchString);
+    }
+
 
     function getUrlParameter(sParam)
     {
