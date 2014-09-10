@@ -135,7 +135,7 @@ $container-lg:                 $container-large-desktop ;
 $body-bg:                    $white;
 
 //== Header
-$header-bg:                  $brand-quinary;
+$header-bg:                  lighten($brand-secondary, 50%);
 $header-bg-image:            img-src;
 $header-height:              auto;
 $header-width:               100%;

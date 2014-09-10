@@ -16,10 +16,11 @@ header {
 
   .parent-id {
     float: left;
-    margin: 15px 0 0 30px;
+    margin:0;
     a {
       text-decoration: none;
       display: block;
+      margin: 23px 0 0 30px;
       width: 60px;
       height: 60px;
       @include replace-text('bsu-logo.png')
