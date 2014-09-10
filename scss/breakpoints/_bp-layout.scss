@@ -2,8 +2,8 @@ header {
   padding: 20px 20px 0 20px;
 
   .identity {
-    float:left;
-    margin:0;
+    float: left;
+    margin: 0;
     a {
       text-decoration: none;
       display: block;
@@ -15,157 +15,166 @@ header {
   }
 
   .parent-id {
-    float:right;
-    margin: 0;
+    float: left;
+    margin: 15px 0 0 30px;
     a {
       text-decoration: none;
       display: block;
-      width: 88px;
-      height: 88px;
-      float: left;
-      font: 0/0 a;
-      color: transparent;
-      text-shadow: none;
-      background-color: transparent;
-      border: 0;
-      background-image: url('../img/bsu-logo.png');
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      clear: left;
+      width: 60px;
+      height: 60px;
+      @include replace-text('bsu-logo.png')
     }
   }
   nav {
-//    float:right;
+    //    float:right;
     ul {
-//      float:right;
+      //      float:right;
 
     }
     li {
-//      display: inline-block;
+      //      display: inline-block;
     }
     a {
-//      color: $white;
-//      text-decoration: none;
-//      font-size: 20px;
-//      text-transform: uppercase;
-//      padding: 20px;
-//      float: left;
+      //      color: $white;
+      //      text-decoration: none;
+      //      font-size: 20px;
+      //      text-transform: uppercase;
+      //      padding: 20px;
+      //      float: left;
     }
   }
 }
 
 .search {
-  clear:both;
-  padding:12% 20% 12% 20%;
+  clear: both;
+  padding: 12% 20% 12% 20%;
   @include clearfix;
 
   input {
-    border:none;
+    border: none;
     float: left;
     padding: 15px;
   }
   .entry {
-    width:90%;
+    width: 90%;
   }
   .submit {
-    width:10%;
+    width: 10%;
 
   }
 }
-.sidemenu{
-  background-color:$brand-primary;
-  padding:0;
-  height:100%;
-  .categories{
-      li{
-        width:100%;
-        float:left;
-        display:block;
+
+.results-page {
+  .search {
+    padding: 3% 20%;
+  }
+}
+
+.sidemenu {
+  background-color: $brand-primary;
+  padding: 0;
+  height: 100%;
+  .categories {
+    li {
+      width: 100%;
+      float: left;
+      display: block;
+    }
+    a {
+      float: left;
+      width: 100%;
+      display: block;
+      color: $white;
+      padding: 1em;
+      &:hover {
+        background-color: lighten($brand-primary, 20);
       }
-      a{
-        float:left;
-        width:100%;
-        display:block;
-        color:$white;
-        padding:1em;
-        &:hover{
-          background-color:lighten($brand-primary, 20);
-        }
-      }
+    }
   }
 }
-.result{
-  margin-top:1em;
-  width:100%;
-  float:left;
-  height:auto;
-  color:#333;
-  h3{
-    color:$white;
+
+.result {
+  margin-top: 1em;
+  width: 100%;
+  float: left;
+  height: auto;
+  color: #333;
+  h3 {
+    color: $white;
   }
 
 }
-.content{
-  padding:0;
-}
-.results{
-  padding:0;
-}
-.btn{
-  padding:1em;
-  width:100%;
 
-  border:none;
-  background-color:$brand-primary;
-  color:$white;
+.content {
+  padding: 0;
 }
-.buttons{
-  float:right;
-  color:$white;
-  height:100px;
-  padding:0;
-  .btn{
-    height:100px;
-    background-color:$brand-primary;
-    &:hover{
+
+.results {
+  padding: 0;
+}
+
+.btn {
+  padding: 1em;
+  width: 100%;
+
+  border: none;
+  background-color: $brand-primary;
+  color: $white;
+}
+
+.buttons {
+  float: right;
+  color: $white;
+  height: 100px;
+  padding: 0;
+  .btn {
+    height: 100px;
+    background-color: $brand-primary;
+    &:hover {
       background-color: lighten($brand-primary, 30);
     }
   }
 }
-.btn{
-  border:none;
-  &:focus{
-    border:none;
-    outline:none;
+
+.btn {
+  border: none;
+  &:focus {
+    border: none;
+    outline: none;
   }
 }
-.modal-header{
+
+.modal-header {
   border-bottom: none;
   min-height: inherit;
-  .modal-title{
-    line-height:inherit;
+  .modal-title {
+    line-height: inherit;
   }
 }
-.modal-footer{
-  border:none;
-  .btn{
-    width:auto;
+
+.modal-footer {
+  border: none;
+  .btn {
+    width: auto;
   }
 }
-.extra{
-  position:relative;
-  background-color:#ECECEC;
+
+.extra {
+  position: relative;
+  background-color: #ECECEC;
   display: none;
-  overflow:hidden;
-  padding:1em 0;
-  img{
-    width:100%;
+  overflow: hidden;
+  padding: 1em 0;
+  img {
+    width: 100%;
   }
 }
-.title{
+
+.title {
   background-color: lighten($brand-primary, 50);
-  height:100px;
+  height: 100px;
 }
-.btn-top{
-  background-color:inherit;
+
+.btn-top {
+  background-color: inherit;
 }

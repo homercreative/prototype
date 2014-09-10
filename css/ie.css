@@ -4531,24 +4531,22 @@ header .identity a {
   float: left;
 }
 header .parent-id {
-  float: right;
-  margin: 0;
+  float: left;
+  margin: 15px 0 0 30px;
 }
 header .parent-id a {
   text-decoration: none;
   display: block;
-  width: 88px;
-  height: 88px;
-  float: left;
+  width: 60px;
+  height: 60px;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url("../img/bsu-logo.png");
+  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410362067');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  clear: left;
 }
 
 .search {
@@ -4561,6 +4559,21 @@ header .parent-id a {
 }
 .search:after {
   clear: both;
+}
+.search input {
+  border: none;
+  float: left;
+  padding: 15px;
+}
+.search .entry {
+  width: 90%;
+}
+.search .submit {
+  width: 10%;
+}
+
+.results-page .search {
+  padding: 3% 20%;
 }
 
 .sidemenu {
