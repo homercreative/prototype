@@ -328,7 +328,7 @@ a:hover {
 }
 
 header {
-  background-color: white;
+  background-color: #faf9f9;
   height: auto;
   font-weight: 500;
   color: #333333;
@@ -343,15 +343,15 @@ header:after {
 }
 
 .identity a {
-  width: 263px;
-  height: 88px;
+  width: 250px;
+  height: 82px;
   float: left;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410348889');
+  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410366036');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -4523,13 +4523,6 @@ header .identity {
   float: left;
   margin: 0;
 }
-header .identity a {
-  text-decoration: none;
-  display: block;
-  width: 263px;
-  height: 88px;
-  float: left;
-}
 header .parent-id {
   float: left;
   margin: 0;
@@ -4562,6 +4555,7 @@ header .parent-id a {
   clear: both;
 }
 .search input {
+  background: #fff;
   border: none;
   float: left;
   padding: 15px;
@@ -4571,6 +4565,14 @@ header .parent-id a {
 }
 .search .submit {
   width: 10%;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410366956');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .results-page .search {

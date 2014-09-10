@@ -4,14 +4,6 @@ header {
   .identity {
     float: left;
     margin: 0;
-    a {
-      text-decoration: none;
-      display: block;
-      width: 263px;
-      height: 88px;
-      float: left;
-
-    }
   }
 
   .parent-id {
@@ -52,6 +44,7 @@ header {
   @include clearfix;
 
   input {
+    background: $white;
     border: none;
     float: left;
     padding: 15px;
@@ -61,7 +54,7 @@ header {
   }
   .submit {
     width: 10%;
-
+    @include replace-text('search.png');
   }
 }
 

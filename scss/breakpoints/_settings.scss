@@ -135,7 +135,7 @@ $container-lg:                 $container-large-desktop ;
 $body-bg:                    $white;
 
 //== Header
-$header-bg:                  lighten($brand-secondary, 50%);
+$header-bg:                  lighten($brand-secondary, 28);
 $header-bg-image:            img-src;
 $header-height:              auto;
 $header-width:               100%;
@@ -149,8 +149,8 @@ $top-height:                 auto;
 $top-width:                  100%;
 
 //== Identity
-$identity-width:             263px;
-$identity-height:            88px;
+$identity-width:             250px;
+$identity-height:            82px;
 $identity-float:             left;
 $identity-image:             'bertie-logo.png';
 
