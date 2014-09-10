@@ -64,8 +64,6 @@ header {
   clear:both;
   padding:1em 0 1em 0;
   @include clearfix;
-  background-color: #969696;
-  border-bottom:1px solid #969696;
   form {
     width: 100%
   }
@@ -83,7 +81,7 @@ header {
   }
 }
 .sidemenu{
-  background-color:rgba(34,43,65,1);
+  background-color:$brand-primary;
   padding:0;
   height:100%;
   .categories{
@@ -97,10 +95,9 @@ header {
         width:100%;
         display:block;
         color:$white;
-        background-color:rgba(34,43,65,1);
         padding:1em;
         &:hover{
-          background-color:lighten(rgba(34,43,65,1), 20);
+          background-color:lighten($brand-primary, 20);
         }
       }
   }
@@ -127,7 +124,7 @@ header {
   width:100%;
 
   border:none;
-  background-color:#222b41;
+  background-color:$brand-primary;
   color:$white;
 }
 .buttons{
@@ -137,9 +134,9 @@ header {
   padding:0;
   .btn{
     height:100px;
-    background-color:#222b41;
+    background-color:$brand-primary;
     &:hover{
-      background-color: lighten(#222b41, 30);
+      background-color: lighten($brand-primary, 30);
     }
   }
 }
@@ -174,7 +171,7 @@ header {
   }
 }
 .title{
-  background-color: lighten(rgba(34,43,65,1), 50);
+  background-color: lighten($brand-primary, 50);
   height:100px;
 }
 .btn-top{

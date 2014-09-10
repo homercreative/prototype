@@ -4559,8 +4559,6 @@ header .search {
 .search {
   clear: both;
   padding: 1em 0 1em 0;
-  background-color: #969696;
-  border-bottom: 1px solid #969696;
 }
 .search:before, .search:after {
   content: " ";
@@ -4585,7 +4583,7 @@ header .search {
 }
 
 .sidemenu {
-  background-color: #222b41;
+  background-color: #22314e;
   padding: 0;
   height: 100%;
 }
@@ -4599,11 +4597,10 @@ header .search {
   width: 100%;
   display: block;
   color: #fff;
-  background-color: #222b41;
   padding: 1em;
 }
 .sidemenu .categories a:hover {
-  background-color: #455784;
+  background-color: #415e95;
 }
 
 .result {
@@ -4629,7 +4626,7 @@ header .search {
   padding: 1em;
   width: 100%;
   border: none;
-  background-color: #222b41;
+  background-color: #22314e;
   color: #fff;
 }
 
@@ -4641,10 +4638,10 @@ header .search {
 }
 .buttons .btn {
   height: 100px;
-  background-color: #222b41;
+  background-color: #22314e;
 }
 .buttons .btn:hover {
-  background-color: #576da5;
+  background-color: #5475b5;
 }
 
 .btn {
@@ -4682,7 +4679,7 @@ header .search {
 }
 
 .title {
-  background-color: #99a7c9;
+  background-color: #9bafd4;
   height: 100px;
 }
 
