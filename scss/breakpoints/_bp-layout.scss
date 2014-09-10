@@ -52,16 +52,11 @@ header {
 //      float: left;
     }
   }
-  .search{
-    padding:12% 20% 12% 20%;
-    border-bottom:none;
-    background-color: none;
-  }
 }
 
 .search {
   clear:both;
-  padding:1em 0 1em 0;
+  padding:12% 20% 12% 20%;
   @include clearfix;
   form {
     width: 100%
