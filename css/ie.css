@@ -4550,15 +4550,10 @@ header .parent-id a {
   background-position: 50% 50%;
   clear: left;
 }
-header .search {
-  padding: 12% 20% 12% 20%;
-  border-bottom: none;
-  background-color: none;
-}
 
 .search {
   clear: both;
-  padding: 1em 0 1em 0;
+  padding: 12% 20% 12% 20%;
 }
 .search:before, .search:after {
   content: " ";
@@ -4566,20 +4561,6 @@ header .search {
 }
 .search:after {
   clear: both;
-}
-.search form {
-  width: 100%;
-}
-.search input {
-  border: none;
-  float: left;
-  padding: 15px;
-}
-.search .entry {
-  width: 90%;
-}
-.search .submit {
-  width: 10%;
 }
 
 .sidemenu {
