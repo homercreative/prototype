@@ -15,7 +15,7 @@ header {
       margin: 23px 0 0 30px;
       width: 60px;
       height: 60px;
-      @include replace-text('bsu-logo.png')
+      @include replace-text('bsu-logo.png');
     }
   }
   nav {
@@ -48,6 +48,7 @@ header {
     border: none;
     float: left;
     padding: 15px;
+    height:50px;
   }
   .entry {
     width: 90%;

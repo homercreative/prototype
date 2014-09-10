@@ -4559,6 +4559,7 @@ header .parent-id a {
   border: none;
   float: left;
   padding: 15px;
+  height: 50px;
 }
 .search .entry {
   width: 90%;
