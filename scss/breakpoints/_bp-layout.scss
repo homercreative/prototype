@@ -51,10 +51,11 @@ header {
     height:50px;
   }
   .entry {
-    width: 90%;
+    width: 95%;
   }
   .submit {
-    width: 10%;
+    background: $;
+    width: 5%;
     @include replace-text('search.png');
   }
 }
