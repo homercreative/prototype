@@ -9,7 +9,7 @@ header {
 
   .identity a{
     margin: 0;
-    @include identity('250px','82px','left', 'bertie-logo.png');
+    @include identity(250px,82px,left,'bertie-logo.png');
   }
 
   .parent-id {

@@ -2904,9 +2904,9 @@ header {
 }
 header .identity a {
   margin: 0;
-  width: "250px";
-  height: "82px";
-  float: "left";
+  width: 250px;
+  height: 82px;
+  float: left;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
