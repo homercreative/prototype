@@ -2911,7 +2911,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/img/bertie-logo.png?1410548257');
+  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2929,7 +2929,7 @@ header .parent-id a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/img/bsu-logo.png?1410548257');
+  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2954,7 +2954,7 @@ header nav a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/img/search.png?1410548257');
+  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
