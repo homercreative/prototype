@@ -1725,10 +1725,15 @@ select[multiple].input-lg,
   right: 15px;
 }
 
+body {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 1.1;
   color: inherit;
 }
