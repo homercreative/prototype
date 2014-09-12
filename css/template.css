@@ -2911,7 +2911,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/images/bertie-logo.png?1410539667');
+  background-image: url('/img/bertie-logo.png?1410548257');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2929,7 +2929,7 @@ header .parent-id a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/images/bsu-logo.png?1410539667');
+  background-image: url('/img/bsu-logo.png?1410548257');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2954,7 +2954,7 @@ header nav a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('/images/search.png?1410539667');
+  background-image: url('/img/search.png?1410548257');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2981,7 +2981,7 @@ input {
 .categories {
   list-style: none;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .categories li {
   display: inline-block;
@@ -3016,14 +3016,9 @@ input {
 }
 
 .result {
-  margin-top: 1em;
-  width: 100%;
+  margin: 1em 0;
   float: left;
   height: auto;
-  color: #333;
-}
-.result h3 {
-  color: white;
 }
 
 .content {
@@ -3032,6 +3027,7 @@ input {
 
 .results {
   padding: 0;
+  border-top: 1px solid #beb2a6;
 }
 
 .btn {
@@ -3091,7 +3087,6 @@ input {
 }
 
 .title {
-  background-color: #9bafd4;
   height: 100px;
 }
 
