@@ -36,7 +36,7 @@ $brand-warning:         rgba(#F5CF47, 1); //Brand orange
 $brand-danger:          rgba(#CF0360, 1); //Brand pink
 
 $white:                 #fff;
-$text-color:            $gray-dark ;
+$text-color:            $gray-light ;
 $link-color:            $brand-primary ;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%) ;
@@ -159,7 +159,7 @@ $navbar-bg:                  rgba(0,0,0,0);
 $navbar-height:              auto;
 $navbar-width:               60%;
 $navbar-float:               right;
-$navbar-margin:              0 0 0 0;
+$navbar-margin:              0;
 $navbar-li-float:            left;
 $navbar-li-width:            auto;
 
@@ -167,7 +167,7 @@ $navbar-li-width:            auto;
 
 $legend-color:              $text-color;
 $legend-border-color:       $gray-light;
-$form-control-padding:      5px;
+$form-control-padding:      15px;
 $input-height-base:         25px;
 $input-color:               $text-color;
 $input-bg:                  $white;
@@ -182,7 +182,7 @@ $input-height-large:        50px;
 
 // == modal boxes
 $zindex-modal:                        2001;
-$modal-content-bg:                    $white;
+$modal-content-bg:                    lighten($brand-secondary, 28);
 $modal-content-fallback-border-color: $gray-light;
 $modal-content-border-color:          $gray-light;
 $zindex-modal-background:             2000;

@@ -359,7 +359,7 @@ header:after {
 nav {
   float: right;
   width: 60%;
-  margin: 0 0 0 0;
+  margin: 0;
   position: relative;
   min-height: auto;
 }
@@ -385,6 +385,7 @@ nav li {
   position: relative;
   display: block;
   width: 100%;
+  padding-left: 15px;
 }
 @media (min-width: 768px) {
   nav li {
@@ -396,9 +397,9 @@ nav a {
   display: block;
   width: 100%;
   display: block;
-  padding: 15px;
+  padding: 0;
   text-decoration: none;
-  color: #fff;
+  color: #beb2a6;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
@@ -1387,7 +1388,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #333333;
+  color: #777777;
   border: 0;
   border-bottom: 1px solid #777777;
 }
@@ -1435,15 +1436,14 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 25px;
-  padding: 5px;
+  height: 50px;
+  margin: 0 0 10px 0;
+  padding: 15px;
   font-size: 14px;
   line-height: 1.4285714;
-  color: #333333;
+  color: #777777;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #777777;
-  border-radius: 8px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1656,7 +1656,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #b7b7b7;
 }
 
 @media (min-width: 768px) {
@@ -1922,7 +1922,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 14px;
-  border-left: 5px solid #333333;
+  border-left: 5px solid #777777;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1935,7 +1935,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.4285714;
-  color: #333333;
+  color: #777777;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -1947,7 +1947,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #333333;
+  border-right: 5px solid #777777;
   border-left: 0;
   text-align: right;
 }
@@ -2098,12 +2098,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
-  background-color: #5cb85c;
+  background-color: #66bc29;
 }
 
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
-  background-color: #4cae4c;
+  background-color: #5ba724;
 }
 
 .table > thead > tr > td.info,
@@ -2116,12 +2116,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #5bc0de;
+  background-color: #0098cd;
 }
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #46b8da;
+  background-color: #0085b3;
 }
 
 .table > thead > tr > td.warning,
@@ -2134,12 +2134,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th {
-  background-color: #d9534f;
+  background-color: #cf0360;
 }
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #d43f3a;
+  background-color: #b60354;
 }
 
 .table > thead > tr > td.danger,
@@ -2152,12 +2152,12 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th {
-  background-color: #f0ad4e;
+  background-color: #f5cf47;
 }
 
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #eea236;
+  background-color: #f4c92f;
 }
 
 @media screen and (max-width: 767px) {
@@ -2250,7 +2250,7 @@ table th[class*="col-"] {
 
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #faf9f9;
   border: 1px solid #777777;
   border: 1px solid #777777;
   border-radius: 8px;
@@ -4516,6 +4516,10 @@ button.close {
   content: "";
 }
 
+body {
+  color: #777777;
+}
+
 header {
   padding: 20px 20px 0 20px;
 }
@@ -4542,6 +4546,10 @@ header .parent-id a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+header nav a {
+  font-size: 14pxpx;
+  font-size: 1.75pxrem;
+}
 
 .search {
   clear: both;
@@ -4554,26 +4562,35 @@ header .parent-id a {
 .search:after {
   clear: both;
 }
-.search input {
-  background: #fff;
-  border: none;
-  float: left;
-  padding: 15px;
-  height: 50px;
-}
 .search .entry {
-  width: 90%;
+  background: #fff;
+  width: 92%;
 }
 .search .submit {
-  width: 10%;
+  width: 8%;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410366956');
+  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410427364');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+label {
+  display: none;
+}
+
+input {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #beb2a6;
+  float: left;
+  padding: 15px;
+  height: 50px;
 }
 
 .results-page .search {

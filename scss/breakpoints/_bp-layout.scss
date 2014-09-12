@@ -1,3 +1,6 @@
+body {
+  color:$text-color;
+}
 header {
   padding: 20px 20px 0 20px;
 
@@ -30,7 +33,7 @@ header {
     a {
       //      color: $white;
       //      text-decoration: none;
-      //      font-size: 20px;
+      @include font-size(14px);
       //      text-transform: uppercase;
       //      padding: 20px;
       //      float: left;
@@ -43,21 +46,27 @@ header {
   padding: 12% 20% 12% 20%;
   @include clearfix;
 
-  input {
-    background: $white;
-    border: none;
-    float: left;
-    padding: 15px;
-    height:50px;
-  }
   .entry {
-    width: 95%;
+    background:$white;
+    width: 92%;
   }
   .submit {
-    background: $;
-    width: 5%;
+    width: 8%;
     @include replace-text('search.png');
   }
+}
+label {
+  display:none;
+}
+input {
+  background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom: 1px solid $brand-secondary;
+  float: left;
+  padding: 15px;
+  height:50px;
 }
 
 .results-page {
