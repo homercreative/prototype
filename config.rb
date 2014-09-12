@@ -12,3 +12,5 @@ relative_assets = true
 line_comments = false
 
 http_images_path = "http://homercreative.github.io/prototype/img"
+http_javascripts_path = "http://homercreative.github.io/prototype/img"
+
