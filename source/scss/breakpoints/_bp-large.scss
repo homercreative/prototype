@@ -1,0 +1,26 @@
+// large break point
+
+@for $i from 1 through $column-count {
+    .col-l-#{$i} {
+        width : column-calc($i);
+    }
+}
+
+.container {
+    min-width: em-font($bp-large);
+}
+.sidemenu{
+  a{
+    text-align: right;
+  }
+}
+.results{
+  padding:0;
+}
+
+nav {
+  float:right;
+  ul {
+    float:right;
+  }
+}

@@ -1,0 +1,58 @@
+@import "settings";
+
+
+
+// CUSTOM GRID FUNCTION SYSTEM
+// ALL FUNCTIONS AND MIXINS FOR THE GRID SYSTEM TO BE KEPT IN THIS FILE
+
+
+// Column Width Calculator
+// -------------------------------------------------------
+
+// Get the base width for each column   
+
+@function column-width() {  
+    @return ( 100% / $column-count );
+}
+
+
+// Column Calculation
+// -------------------------------------------------------
+
+// Return the reqiured width based on the width needed minus the gutters
+
+@function column-calc($columns) {
+    @return ( column-width() * $columns );
+}
+
+
+// Column mixins
+// -------------------------------------------------------
+
+// Returns the css needed for the a single column
+
+@mixin column($columns, $prepend : 0, $append : 0) {
+        float                   : left;
+        margin-left         : column-calc($prepend);
+        margin-right       : column-calc($append);
+        position              : relative;
+        width                 : column-calc($columns);
+        padding             : 0 $gutter;
+}
+
+
+// Base css for basic grid system to extend
+
+[class^="col-"] {
+        float               : left;
+        padding         : 0 $gutter;
+        position          :relative;
+}
+
+// Create the basic base css for each column automaticly
+
+@for $i from 1 through $column-count {
+    .col-#{$i} {
+            width       : column-calc($i);
+    }
+}

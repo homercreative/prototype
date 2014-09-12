@@ -1,0 +1,189 @@
+// Table of Contents
+
+// See mark-down file for how to use compass' rhythm and trailer/leader functions or check the compass documentation
+// -------------------------------------------------------------
+
+// ::Imports pre-render
+	//:: Reset
+	//:: Settings
+	//:: Mixins
+// ::Clearfix extends
+// ::Base styles
+
+// ::Layout styles
+// ::Media queries
+// ::State styles
+// ::Debugs
+
+
+// ::Imports pre-render. Must be after reset
+// ------------------------------------------------------------
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "libs/reset";
+@import "libs/theme";
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/layouts";
+
+
+
+
+
+
+/* ::Clearfixs and extends. Use which suits best */
+/* ----------------------------------------------------------- */
+
+// CHOOSE YOUR CLEARFIX, OR YOU KNOW USE BOTH. WHATEVER, I'M NOT YOUR MOTHER
+
+// Use clearfix if you need general clearfixing
+.clearfix 			{ @include clearfix; }
+
+
+// Use pie-clearfix if you need clearfixing that doesn't use overflow: hidden
+.pie-clearfix 		{ @include pie-clearfix; }
+
+
+
+// OTHER EXTENDS
+
+// Max width, for images etc... in RWD
+.max-width 			{ max-width: 100%; height: auto; }
+
+
+
+/* ::Base styles Almost exclusively single element selectors */
+/* ------------------------------------------------------------ */
+
+html {
+	font-size: 100%;
+	@include advancedtype();
+}
+
+body {
+	color: $base-color;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: $action;
+	@include force-wrap;					// force text links to wrap
+	&:hover, &:focus, &:active {
+		color: $action-respond;
+	}
+}
+
+// Import base typography into the cascade (if required)
+@import "libs/typography";
+
+
+// Import form styles into the cascade (if required)
+@import "libs/forms";
+@import "libs/tables";
+
+
+/* Your Plugins */
+@import "plugins/font-awesome/font-awesome";
+@import "plugins/owl";
+@import "plugins/modal";
+
+
+/* ------------------------------------------------------------ */
+
+@import "breakpoints/bp-layout";
+
+/* ::Media queries */
+/* ------------------------------------------------------------ */
+
+// If using gridset or another pre-defined grid, these should match up to the same breakpoints
+
+// Below examples use a mobile-first approach
+
+
+@media screen and (min-width: em-font($bp-small)) {
+	@import "breakpoints/bp-small";
+}
+
+@media screen and (min-width: em-font($bp-med)) {
+	@import "breakpoints/bp-med";
+}
+
+@media screen and (min-width: em-font($bp-large)) {
+	@import "breakpoints/bp-large";
+}
+
+@media screen and (min-width: em-font($bp-xl)) {
+	@import "breakpoints/bp-xl";
+}
+
+
+// Print styles
+@media print {
+	body {
+		// Smaller type for printing. Save a tree
+		font-size: percentage(10 / 16);
+		@include adjust-leading-to(2);
+	}
+}
+
+
+// IOS specifics
+@media screen and (max-width: 769px) {  // Absolute measure here, as we're talking about devices, not screen size
+	body {
+		-webkit-text-size-adjust:none; 			// Stop iPhone/iPad from scaling text
+	}
+}
+
+
+/* ::State styles */
+/* ------------------------------------------------------------ */
+
+.is-hidden {
+	display: none;
+}
+
+.is-shown, .is-block {
+	display: block;
+}
+
+.is-uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.is-lowercase {
+	text-transform: lowercase;
+}
+
+
+/* ::Debugs and #grid by Jon Gibbins */
+/* ----------------------------------------------------------- */
+
+#grid {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#grid div.horiz{
+	// Use this one NOT using a global border-box setting
+	// height: $base-line-height - 1px;
+
+	// Use this one if you ARE using a global border-box setting
+    height: $base-line-height;
+
+    // Carry on...
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+
+/** Javascript Typekit Async **/
+
+.wf-loading{
+  visibility: hidden;
+}

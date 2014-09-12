@@ -1,0 +1,120 @@
+// SET UP YOUR VARIABLES IN THIS FILE
+
+
+// Colours
+// ------------------------------------------------------------
+
+// Define your main colour palette
+
+$brand-primary:         rgba(#22314E, 1);
+$brand-secondary:       rgba(#BEB2A6, 1);
+$brand-tertiary:        rgba(#6D5E51, 1);
+$brand-quaternary:      rgba(#C79316, 1);
+$brand-quinary:         rgba(#1B232A, 1);
+
+$brand-success:         rgba(#66BC29, 1);                     //Brand Lime
+$brand-info:            rgba(#0098CD, 1);                     //Brand Blue
+$brand-warning:         rgba(#F5CF47, 1);                     //Brand orange
+$brand-danger:          rgba(#CF0360, 1);                     //Brand pink
+
+$white:                 rgba(#FFF, 1);                        // White
+$text-color:            lighten(#000, 46.7%);
+
+$link-color:            $brand-primary ;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%) ;
+
+// Assign colours to variable roles
+
+$base-color									: $brand-primary;
+$heading-color								: $brand-secondary;
+$secondary-heading-color					: $brand-tertiary;
+
+
+
+// Links
+
+$action										: $brand-primary;
+$action-respond								: $brand-secondary;
+$secondary-action							: $action-respond;
+$secondary-action-respond					: $action;
+
+// Alerts, errors and UI interface
+
+$alert 										: red;
+$success 									: green;
+
+
+
+// Fonts, measure, leading and typefaces
+// ------------------------------------------------------------
+
+
+// Fonts size and line height defaults for our calculations
+
+$base-font-size								: 16px; 				// Sets the browser default size. Shouldn't need to change this.
+$base-line-height							: 8px;					// Baseline grid. Set to a sensible, small size.
+$round-to-nearest-half-line					: false;  				// Round the line height to the nearest half line height. Off by default
+
+
+// Grids, columns and
+// ------------------------------------------------------------
+
+$column-count								: 10;
+$gutter 									: 10px;
+
+// Breakpoints
+// ------------------------------------------------------------
+
+// Start with the small screen first, then expand until it looks like shit. Time for a breakpoint! -Stephen Hay
+
+$bp-small 									: 480px;
+$bp-med										: 800px;
+$bp-large									: 1000px;
+$bp-xl										: 1240px;
+
+
+// OWl Carousel Theme
+// ------------------------------------------------------------!
+
+//nav
+// ------------------------------------------------------------
+$nav-color: 			$brand-primary;
+$nav-color-hover:		$brand-primary;
+$nav-font-size: 		14px;
+$nav-rounded: 			3px;
+$nav-margin: 			5px;
+$nav-padding: 			4px 7px;
+$nav-background: 		$brand-secondary;
+$nav-background-hover:	$brand-tertiary	;
+$nav-disabled-opacity: 	0.5;
+
+//dots
+// ------------------------------------------------------------
+$dot-width:				10px;
+$dot-height:			10px;
+$dot-rounded:			30px;
+$dot-margin: 			5px 7px;
+$dot-background:		$brand-secondary;
+$dot-background-active:	$brand-tertiary	;
+
+// END OWl Carousel Theme
+// ------------------------------------------------------------!
+
+
+// Tables
+// ------------------------------------------------------------
+$table-border-color: $brand-primary;
+$table-border-width: .071428571em;
+$table-border-style: solid;
+$table-margin-bottom: 1.529411765em;
+$table-cell-padding: .470588235em;
+$table-cell-text-align: left;
+$table-cell-border-top: $table-border-width $table-border-style $table-border-color;
+$table-header-font-weight: bold;
+$table-body-border-top: .142857143em $table-border-style $table-border-color;
+$table-condensed-padding: .294117647em;
+$table-bordered-border: $table-border-width $table-border-style $table-border-color;
+$table-bordered-border-radius: .470588235em;
+$table-border-left: $table-border-width $table-border-style $table-border-color;
+$table-bordered-child-radius: .470588235em;
