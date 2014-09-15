@@ -1,0 +1,150 @@
+body {
+  background-color: $body-bg;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  &:hover {
+    color: darken($link-color, 20);
+  }
+}
+
+header {
+
+  @if $header-bg-image == img-src {
+    background-color: $header-bg;
+  } @else {
+    background: $header-bg $header-bg-image;
+  }
+  height: $header-height;
+  font-weight: $header-font-weight;
+  color: $header-color;
+  margin: $header-margin;
+
+  @include clearfix();
+}
+
+.identity a {
+  width: $identity-width;
+  height: $identity-height;
+  float: $identity-float;
+  @include replace-text($identity-image);
+}
+
+nav {
+  float:$navbar-float;
+  width: $navbar-width;
+  margin: $navbar-margin;
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: $border-radius;
+  }
+  ul {
+    margin-bottom: 0;
+    padding-left: 0; // Override default ul/ol
+    list-style: none;
+    @include clearfix();
+  }
+  li {
+    float: $navbar-li-float;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-left:15px;
+    @media (min-width: $grid-float-breakpoint) {
+      width:$navbar-li-width;
+    }
+
+  }
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    color: $brand-secondary;
+
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.inner{
+  padding:$padding;
+  width:100%;
+}
+
+.embed{
+  width:100%;
+}
+
+.content{
+  width:100%;
+}
+
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix();
+}
+.center-block {
+  @include center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  @include text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+  @include translate3d(0, 0, 0);
+}
