@@ -1,21 +1,26 @@
 body {
-  color:$text-color;
+  color: $text-color;
   font-family: "Raleway", helvetica, arial, sans-serif;
 }
+
 a {
-  color:$brand-secondary;
+  color: $brand-secondary;
 }
+
 header {
   padding: 20px 20px 0 20px;
 
-  .identity a{
-    margin: 0;
-    @include identity(250px,82px,left,'bertie-logo.png');
+  .identity {
+    float: left;
+    a {
+      margin: 0;
+      @include identity(250px, 82px, left, 'bertie-logo.png');
+    }
   }
 
   .parent-id {
     float: left;
-    margin:0;
+    margin: 0;
     a {
       text-decoration: none;
       display: block;
@@ -37,9 +42,9 @@ header {
     a {
       text-decoration: none;
       @include font-size(14px);
-      padding:0.5em;
+      padding: 0.5em;
     }
-    a:hover{
+    a:hover {
       color: darken($brand-secondary, 20);
     }
   }
@@ -51,7 +56,7 @@ header {
   @include clearfix;
 
   .entry {
-    background:$white;
+    background: $white;
     width: 92%;
   }
   .submit {
@@ -59,18 +64,20 @@ header {
     @include replace-text('search.png');
   }
 }
+
 label {
-  display:none;
+  display: none;
 }
+
 input {
-  background:none;
-  border-top:none;
-  border-right:none;
-  border-left:none;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   border-bottom: 1px solid $brand-secondary;
   float: left;
   padding: 15px;
-  height:50px;
+  height: 50px;
 }
 
 .results-page {
@@ -81,7 +88,7 @@ input {
 
 .categories {
   list-style: none;
-  text-align:center;
+  text-align: center;
   margin-bottom: 3em;
   li {
     display: inline-block;
@@ -91,9 +98,10 @@ input {
     border-bottom: 1px solid $brand-secondary;
   }
   a {
-    padding:0 0 0.5em;
+    padding: 0 0 0.5em;
   }
 }
+
 .sidemenu {
   background-color: $brand-primary;
   padding: 0;
@@ -189,7 +197,6 @@ input {
     width: 100%;
   }
 }
-
 
 .title {
   height: 100px;
