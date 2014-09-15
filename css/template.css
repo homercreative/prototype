@@ -3359,7 +3359,7 @@ header .parent-id {
 header .parent-id a {
   text-decoration: none;
   display: block;
-  margin: 23px 0 0 30px;
+  margin: 0 0.5em;
   width: 60px;
   height: 60px;
   text-indent: -119988px;
@@ -3370,9 +3370,20 @@ header .parent-id a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  display: inline-block;
+}
 header nav a {
+  text-decoration: none;
   font-size: 14pxpx;
   font-size: 1.75pxrem;
+  padding: 0.5em;
+}
+header nav a:hover {
+  color: #937f6b;
 }
 
 .search {
