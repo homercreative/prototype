@@ -118,3 +118,44 @@ $table-bordered-border: $table-border-width $table-border-style $table-border-co
 $table-bordered-border-radius: .470588235em;
 $table-border-left: $table-border-width $table-border-style $table-border-color;
 $table-bordered-child-radius: .470588235em;
+
+// Modal boxes
+// ------------------------------------------------------------
+$zindex-modal:                        2001;
+$modal-content-bg:                    lighten($brand-secondary, 28);
+$modal-content-fallback-border-color: $text-color;
+$modal-content-border-color:          $text-color;
+$zindex-modal-background:             2000;
+$modal-backdrop-bg:                   #000;
+$modal-backdrop-opacity:              0.5;
+$modal-title-padding:                 10px;
+$modal-header-border-color:           $text-color;
+$modal-title-line-height:             100px;
+$modal-inner-padding:                 10px;
+$modal-footer-border-color:           $text-color;
+$modal-md:                            300px;
+$modal-sm:                            300px;
+$modal-lg:                            300px;
+$border-radius:                       10px;
+
+// Forms
+// -------------------------------------------------------------
+
+$legend-color:              $text-color;
+$legend-border-color:       $text-color;
+$form-control-padding:      15px;
+$input-height-base:         25px;
+$input-color:               $text-color;
+$input-bg:                  $white;
+$input-border:              $text-color;
+$input-border-radius:       $border-radius;
+$input-border-focus:        $text-color;
+$input-color-placeholder:   $text-color;
+$input-bg-disabled:         $text-color;
+$input-bg-disabled:         $text-color;
+$input-height-small:        20px;
+$input-height-large:        50px;
+$line-height-base:        1.428571429 ; // 20/14
+$line-height-small:       1.428571429 ;
+$line-height-large:       1.428571429 ;
+$line-height-computed:    floor(($base-font-size * $line-height-base)) ; // ~20px

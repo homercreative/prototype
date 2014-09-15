@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                     precision: '5'
                 },
                 files: {
-                   'css/template.css' : 'source/scss/template.scss'
+                    'css/template.css' : 'source/scss/template.scss'
                 }
             }
         },
@@ -56,14 +56,14 @@ module.exports = function(grunt) {
             }
         },
         concat: {
-                options:{
-                        separator: '\r\n'
-                    },
-                build: {
-                    src: ['source/js/plugins/*.js','source/js/boilerplate.js', 'source/js/script.js'],
-                    dest: 'js/script.js'
-                }
+            options:{
+                separator: '\r\n'
             },
+            build: {
+                src: ['source/js/plugins/*.js','source/js/boilerplate.js', 'source/js/script.js'],
+                dest: 'js/script.js'
+            }
+        },
         watch: {
             build:{
                 files: ['source/js/**/*.js', 'source/scss/**/*.scss'],

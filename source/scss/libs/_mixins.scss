@@ -13,27 +13,27 @@
 
 // Mixins for list style types
 @mixin unordered {
-	 list-style-position: outside; 
-	 list-style-type: disc;
+  list-style-position: outside;
+  list-style-type: disc;
 }
 
 @mixin unordered-inside {
-	 list-style-position: inside; 
-	 list-style-type: disc;
+  list-style-position: inside;
+  list-style-type: disc;
 }
 
 @mixin ordered {
-	list-style-position: outside; 
-	list-style-type: decimal;
+  list-style-position: outside;
+  list-style-type: decimal;
 }
 
 @mixin ordered-inside {
-	list-style-position: inside; 
-	list-style-type: decimal;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
 @mixin nobullet {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 
@@ -43,25 +43,25 @@
 // Get advanced with type if needed for ligatures etc...
 
 @mixin advancedtype {
-	//font-variant-ligatures: contextual;  				// Set the default for ligatures
-	//-moz-font-feature-settings: "liga=1,dlig=1";    	// Ligature settings for mozilla
-	font-kerning: normal; 								// Set the default for kerning
-	-webkit-font-smoothing: antialiased; 				// Improve (or in some cases royally screw with) safari's legibility somewhat
-	//font-synthesis: none; 							// Don't allow the font to create sythetic bold/italic
-	//text-rendering: optimizeLegibility; 				// Improve kerning pairs. Webkit gets funny with this sometimes
+  //font-variant-ligatures: contextual;  				// Set the default for ligatures
+  //-moz-font-feature-settings: "liga=1,dlig=1";    	// Ligature settings for mozilla
+  font-kerning: normal; 								// Set the default for kerning
+  -webkit-font-smoothing: antialiased; 				// Improve (or in some cases royally screw with) safari's legibility somewhat
+  //font-synthesis: none; 							// Don't allow the font to create sythetic bold/italic
+  //text-rendering: optimizeLegibility; 				// Improve kerning pairs. Webkit gets funny with this sometimes
 }
 
 
-// Retina images. 
+// Retina images.
 // Use with care - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
 // -------------------------------------------------------
 
 @mixin image-2x($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
-         (-o-min-device-pixel-ratio: 2.6/2),
-         (-webkit-min-device-pixel-ratio: 1.3),
-         (min-device-pixel-ratio: 1.3),
-         (min-resolution: 1.3dppx) {
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
     /* on retina, use image that's scaled by 2 */
     background-image: url($image);
     background-size: $width $height;
@@ -74,9 +74,9 @@
 // Set-up custom transitions
 
 @mixin color_transition {
-	@include transition-property(color); 
-	@include transition-duration(0.3s); 
-	@include transition-timing-function(ease-in-out);
+  @include transition-property(color);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in-out);
 }
 
 // HEX to RGB
@@ -84,8 +84,8 @@
 // -------------------------------------------------------
 
 @mixin rgba($color, $value) {
-	background-color: $color;
-	background-color: rgba($color, $value);
+  background-color: $color;
+  background-color: rgba($color, $value);
 }
 
 // Animation Sass
@@ -134,4 +134,95 @@
   float: $identity-float;
   @include replace-text($identity-image);
 
+}
+
+
+// Form validation states
+//
+// Used in forms.less to generate the form validation CSS for warnings, errors,
+// and successes.
+
+@mixin form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5) {
+  // Color the label and help text
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline  {
+    color: $text-color;
+  }
+  // Set the border and box shadow on specific inputs to match
+  .form-control {
+    //@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
+    &:focus {
+      //$shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($border-color, 20%);
+      //@include box-shadow($shadow);
+    }
+  }
+  // Set validation states also for addons
+  .input-group-addon {
+    color: $text-color;
+    border-color: $border-color;
+    background-color: $background-color;
+  }
+  // Optional feedback icon
+  .form-control-feedback {
+    color: $text-color;
+  }
+}
+
+
+// Form control focus state
+//
+// Generate a customized focus state and for any input with the specified color,
+// which defaults to the `$input-border-focus` variable.
+//
+// We highly encourage you to not customize the default value, but instead use
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+// WebKit's default styles, but applicable to a wider range of browsers. Its
+// usability and accessibility should be taken into account with any change.
+//
+// Example usage: change the default blue border and shadow to white for better
+// contrast against a dark gray background.
+@mixin form-control-focus($color: $input-border-focus) {
+  $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  &:focus {
+    border-color: $color;
+    outline: 0;
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $color-rgba);
+  }
+}
+
+// Form control sizing
+//
+// Relative text size, padding, and border-radii changes for form controls. For
+// horizontal sizing, wrap controls in the predefined grid classes. `<select>`
+// element gets special love because it's special, and that's a fact!
+// [converter] $parent hack
+@mixin input-size($parent, $input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  #{$parent} {
+    height: $input-height;
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+  }
+
+  select#{$parent} {
+    height: $input-height;
+    line-height: $input-height;
+  }
+
+  textarea#{$parent},
+  select[multiple]#{$parent} {
+    height: auto;
+  }
+}
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  &::-moz-placeholder           { color: $color;   // Firefox
+    opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
 }
