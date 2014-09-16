@@ -3,38 +3,32 @@ body {
   font-family: "Raleway", helvetica, arial, sans-serif;
 }
 
-a {
-  color: $brand-secondary;
-}
-
 header {
-  padding: 20px 20px 0 20px;
+  padding: 1em;
 
   .identity {
     float: left;
     a {
       margin: 0;
-      @include identity(250px, 82px, left, 'bertie-logo.png');
+      @include identity(200px, 64px, left, 'bertie-logo.png');
     }
   }
 
   .parent-id {
-    float: left;
+    float: right;
     margin: 0;
     a {
       text-decoration: none;
       display: block;
-      margin: 0 0.5em;
-      width: 60px;
-      height: 60px;
-      @include replace-text('bsu-logo.png');
+      margin: 14px 0 0 0.8em;
+      @include identity(50px, 50px, left, 'bsu-logo.png');
     }
   }
   nav {
-
+    clear:both;
     ul {
+      text-align: center;
       list-style: none;
-
     }
     li {
       display: inline-block;
@@ -43,37 +37,57 @@ header {
       text-decoration: none;
       @include font-size(14px);
       padding: 0.5em;
+      &:hover {
+        color: darken($brand-secondary, 20);
+        span {
+          background: $brand-secondary;
+        }
+      }
     }
-    a:hover {
-      color: darken($brand-secondary, 20);
+    span {
+      padding: .2em .5em;
+      background: $brand-danger;
+      color: $white;
+      @include rounded(5px);
+      @include transition(all, 0.5s, ease-in-out);
     }
   }
 }
+
+a {
+  text-decoration: none;
+  @include transition(all, 0.5s, ease-in-out);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
 .search {
   clear: both;
-  padding: 12% 20% 12% 20%;
+  padding: 0;
   @include clearfix;
 
   .entry {
     background: $white;
-    width: 92%;
-    border-bottom:1px solid $brand-secondary;
+    width: 80%;
+    border-bottom: 1px solid $brand-secondary;
   }
   .submit {
-    width: 8%;
+    width: 20%;
     @include replace-text('search.png');
   }
 }
+
 label {
   display: none;
 }
 
 input {
+  color: $text-color;
+  font-family: "Raleway", helvetica, arial, sans-serif;
   background: none;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+  border: none;
   float: left;
   padding: 15px;
   height: 50px;
@@ -81,7 +95,7 @@ input {
 
 .results-page {
   .search {
-    padding: 3% 20%;
+    padding: 0;
   }
 }
 
@@ -94,43 +108,31 @@ input {
     padding: 0 1.5em;
   }
   a {
+    display: block;
     text-decoration: none;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid $white;
+    @include transition(all, 0.5s, ease-in-out);
+    &:hover {
+      border-bottom: 1px solid $brand-secondary;
+    }
   }
   .active {
-    padding-bottom: 0.2em;
-    border-bottom: 3px solid $brand-secondary;
-  }
-
-}
-
-.sidemenu {
-  background-color: $brand-primary;
-  padding: 0;
-  height: 100%;
-  .categories {
-    li {
-      width: 100%;
-      float: left;
-      display: block;
-    }
-    a {
-      float: left;
-      width: 100%;
-      display: block;
-      color: $white;
-      padding: 1em;
-      &:hover {
-        background-color: lighten($brand-primary, 20);
-      }
+    border-bottom: 1px solid $brand-quinary;
+    &:hover {
+      color: $brand-quinary;
+      border-bottom: 1px solid $brand-quinary;
     }
   }
 }
 
 .result {
-  margin: 1em 0;
+  margin: 0;
   float: left;
-  height: auto;
-
+  height: 300px;
+  width: 100%;
+  padding: 1em;
+  background: lighten($brand-secondary, 27);
 }
 
 .content {
@@ -139,7 +141,6 @@ input {
 
 .results {
   padding: 0;
-  border-top: 1px solid $brand-secondary;
 }
 
 .btn {

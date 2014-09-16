@@ -449,6 +449,12 @@ $('document').ready(function(){
         window.location.href = (url + get + '');
     });
 
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:1,
+            dots:false
+        });
+    });
 
     var searchString = decodeURI(getUrlParameter('search'));
 

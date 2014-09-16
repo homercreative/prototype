@@ -18,12 +18,12 @@ h1 {
 			
 h2 { 
 	@include adjust-font-size-to(30px); 
-	margin: rhythm(4, 30px) 0 rhythm(2, 30px) 0;  			// 4 lines above / 2 lines below, based on font size 
+	margin: 0 0 rhythm(2, 30px) 0;  			// 4 lines above / 2 lines below, based on font size
 }
 
 h3 { 
 	@include adjust-font-size-to(22px); 
-	margin: rhythm(4, 22px) 0 rhythm(2, 22px) 0;  			// 4 lines above / 2 lines below, based on font size 
+	margin: 0 0 rhythm(2, 22px) 0;  			// 4 lines above / 2 lines below, based on font size
 } 
 
 h4 { 

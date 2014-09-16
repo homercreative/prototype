@@ -9,3 +9,25 @@
 .container {
 	min-width: em-font($bp-med);
 }
+
+
+.search {
+  padding: 12% 20% 12% 20%;
+
+  .entry {
+    width: 92%;
+  }
+  .submit {
+    width: 8%;
+  }
+}
+
+.results-page {
+  .search {
+    padding: 3% 20%;
+  }
+}
+
+.result {
+  width:25%;
+}

@@ -129,6 +129,7 @@
 
 @mixin identity($identity-width,  $identity-height, $identity-float, $identity-image){
 
+  background-size: 100%;
   width: $identity-width;
   height: $identity-height;
   float: $identity-float;

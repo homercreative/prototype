@@ -181,13 +181,13 @@ h1 {
 h2 {
   font-size: 1.875em;
   line-height: 1.33333em;
-  margin: 1.06667em 0 0.53333em 0;
+  margin: 0 0 0.53333em 0;
 }
 
 h3 {
   font-size: 1.375em;
   line-height: 1.45455em;
-  margin: 1.45455em 0 0.72727em 0;
+  margin: 0 0 0.72727em 0;
 }
 
 h4 {
@@ -6134,48 +6134,51 @@ body {
   font-family: "Raleway", helvetica, arial, sans-serif;
 }
 
-a {
-  color: #beb2a6;
-}
-
 header {
-  padding: 20px 20px 0 20px;
+  padding: 1em;
 }
 header .identity {
   float: left;
 }
 header .identity a {
   margin: 0;
-  width: 250px;
-  height: 82px;
+  background-size: 100%;
+  width: 200px;
+  height: 64px;
   float: left;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
+  background-image: url('../img/bertie-logo.png?1410366036');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 header .parent-id {
-  float: left;
+  float: right;
   margin: 0;
 }
 header .parent-id a {
   text-decoration: none;
   display: block;
-  margin: 0 0.5em;
-  width: 60px;
-  height: 60px;
+  margin: 14px 0 0 0.8em;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  float: left;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
+  background-image: url('../img/bsu-logo.png?1410362338');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+header nav {
+  clear: both;
+}
 header nav ul {
+  text-align: center;
   list-style: none;
 }
 header nav li {
@@ -6190,25 +6193,53 @@ header nav a {
 header nav a:hover {
   color: #937f6b;
 }
+header nav a:hover span {
+  background: #beb2a6;
+}
+header nav span {
+  padding: .2em .5em;
+  background: #cf0360;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
 
 .search {
   clear: both;
-  padding: 12% 20% 12% 20%;
+  padding: 0;
   overflow: hidden;
   *zoom: 1;
 }
 .search .entry {
   background: white;
-  width: 92%;
+  width: 80%;
   border-bottom: 1px solid #beb2a6;
 }
 .search .submit {
-  width: 8%;
+  width: 20%;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
+  background-image: url('../img/search.png?1410427364');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6218,18 +6249,17 @@ label {
 }
 
 input {
+  color: #1b232a;
+  font-family: "Raleway", helvetica, arial, sans-serif;
   background: none;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+  border: none;
   float: left;
   padding: 15px;
   height: 50px;
 }
 
 .results-page .search {
-  padding: 3% 20%;
+  padding: 0;
 }
 
 .categories {
@@ -6242,38 +6272,34 @@ input {
   padding: 0 1.5em;
 }
 .categories a {
+  display: block;
   text-decoration: none;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid white;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.categories a:hover {
+  border-bottom: 1px solid #beb2a6;
 }
 .categories .active {
-  padding-bottom: 0.2em;
-  border-bottom: 3px solid #beb2a6;
+  border-bottom: 1px solid #1b232a;
 }
-
-.sidemenu {
-  background-color: #22314e;
-  padding: 0;
-  height: 100%;
-}
-.sidemenu .categories li {
-  width: 100%;
-  float: left;
-  display: block;
-}
-.sidemenu .categories a {
-  float: left;
-  width: 100%;
-  display: block;
-  color: white;
-  padding: 1em;
-}
-.sidemenu .categories a:hover {
-  background-color: #415e95;
+.categories .active:hover {
+  color: #1b232a;
+  border-bottom: 1px solid #1b232a;
 }
 
 .result {
-  margin: 1em 0;
+  margin: 0;
   float: left;
-  height: auto;
+  height: 300px;
+  width: 100%;
+  padding: 1em;
+  background: #f8f7f6;
 }
 
 .content {
@@ -6282,7 +6308,6 @@ input {
 
 .results {
   padding: 0;
-  border-top: 1px solid #beb2a6;
 }
 
 .btn {
@@ -6351,6 +6376,37 @@ input {
 
 /* ::Media queries */
 /* ------------------------------------------------------------ */
+@media screen and (min-width: 30em) {
+  header .identity a {
+    width: 250px;
+    height: 82px;
+  }
+  header .parent-id {
+    float: left;
+  }
+  header .parent-id a {
+    width: 60px;
+    height: 60px;
+    margin-top: 22px;
+  }
+  header nav {
+    clear: none;
+  }
+  header nav ul {
+    text-align: right;
+  }
+
+  .search .entry {
+    width: 90%;
+  }
+  .search .submit {
+    width: 10%;
+  }
+
+  .result {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 50em) {
   .col-m-1 {
     width: 8.33333%;
@@ -6402,6 +6458,24 @@ input {
 
   .container {
     min-width: 50em;
+  }
+
+  .search {
+    padding: 12% 20% 12% 20%;
+  }
+  .search .entry {
+    width: 92%;
+  }
+  .search .submit {
+    width: 8%;
+  }
+
+  .results-page .search {
+    padding: 3% 20%;
+  }
+
+  .result {
+    width: 25%;
   }
 }
 @media screen and (min-width: 62.5em) {
