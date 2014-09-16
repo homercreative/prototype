@@ -45,7 +45,6 @@ label {
 
 // Override content-box in Normalize (* isn't specific enough)
 input[type="search"] {
-
   @include box-sizing(border-box);
 }
 

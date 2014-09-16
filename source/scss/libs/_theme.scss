@@ -28,7 +28,7 @@ $brand-orange-2:        rgba(#bc7f29,1);
 $brand-yellow:        rgba(#e3b40c,1);
 
 $white:                 rgba(#FFF, 1);                        // White
-$text-color:            $brand-quinary;
+$text-color:            lighten(#000, 46.7%);
 
 $link-color:            $brand-primary ;
 $link-decoration:       none;
@@ -70,8 +70,8 @@ $round-to-nearest-half-line					: false;  				// Round the line height to the ne
 // Grids, columns and
 // ------------------------------------------------------------
 
-$column-count								: 12;
-$gutter 									: 12px;
+$column-count								: 10;
+$gutter 									: 10px;
 
 // Breakpoints
 // ------------------------------------------------------------
