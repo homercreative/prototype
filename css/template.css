@@ -6290,6 +6290,11 @@ input {
   margin: 1em 0;
   float: left;
   height: auto;
+  width: 100%;
+}
+
+.owl-stage {
+  width: 100%;
 }
 
 .content {
