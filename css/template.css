@@ -6153,7 +6153,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/bertie-logo.png?1410366036');
+  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6171,7 +6171,7 @@ header .parent-id a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/bsu-logo.png?1410362338');
+  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6200,6 +6200,7 @@ header nav a:hover {
 .search .entry {
   background: white;
   width: 92%;
+  border-bottom: 1px solid #beb2a6;
 }
 .search .submit {
   width: 8%;
@@ -6207,7 +6208,7 @@ header nav a:hover {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/search.png?1410427364');
+  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6221,7 +6222,7 @@ input {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #beb2a6;
+  border-bottom: none;
   float: left;
   padding: 15px;
   height: 50px;
@@ -6238,13 +6239,14 @@ input {
 }
 .categories li {
   display: inline-block;
-  padding: 0 1em;
-}
-.categories .active {
-  border-bottom: 1px solid #beb2a6;
+  padding: 0 1.5em;
 }
 .categories a {
-  padding: 0 0 0.5em;
+  text-decoration: none;
+}
+.categories .active {
+  padding-bottom: 0.2em;
+  border-bottom: 3px solid #beb2a6;
 }
 
 .sidemenu {

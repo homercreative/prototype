@@ -49,7 +49,6 @@ header {
     }
   }
 }
-
 .search {
   clear: both;
   padding: 12% 20% 12% 20%;
@@ -58,13 +57,13 @@ header {
   .entry {
     background: $white;
     width: 92%;
+    border-bottom:1px solid $brand-secondary;
   }
   .submit {
     width: 8%;
     @include replace-text('search.png');
   }
 }
-
 label {
   display: none;
 }
@@ -74,7 +73,7 @@ input {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid $brand-secondary;
+  border-bottom: none;
   float: left;
   padding: 15px;
   height: 50px;
@@ -92,14 +91,16 @@ input {
   margin-bottom: 3em;
   li {
     display: inline-block;
-    padding: 0 1em;
-  }
-  .active {
-    border-bottom: 1px solid $brand-secondary;
+    padding: 0 1.5em;
   }
   a {
-    padding: 0 0 0.5em;
+    text-decoration: none;
   }
+  .active {
+    padding-bottom: 0.2em;
+    border-bottom: 3px solid $brand-secondary;
+  }
+
 }
 
 .sidemenu {
