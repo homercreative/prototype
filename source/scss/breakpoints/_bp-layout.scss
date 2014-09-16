@@ -4,31 +4,30 @@ body {
 }
 
 header {
-  padding: 20px 20px 0 20px;
+  padding: 1em;
 
   .identity {
     float: left;
     a {
       margin: 0;
-      @include identity(250px, 82px, left, 'bertie-logo.png');
+      @include identity(200px, 64px, left, 'bertie-logo.png');
     }
   }
 
   .parent-id {
-    float: left;
+    float: right;
     margin: 0;
     a {
       text-decoration: none;
       display: block;
-      margin: 22px 0 0 0.8em;
-      width: 60px;
-      height: 60px;
-      @include replace-text('bsu-logo.png');
+      margin: 14px 0 0 0.8em;
+      @include identity(50px, 50px, left, 'bsu-logo.png');
     }
   }
   nav {
-
+    clear:both;
     ul {
+      text-align: center;
       list-style: none;
     }
     li {
@@ -66,16 +65,16 @@ a {
 
 .search {
   clear: both;
-  padding: 12% 20% 12% 20%;
+  padding: 0;
   @include clearfix;
 
   .entry {
     background: $white;
-    width: 92%;
+    width: 80%;
     border-bottom: 1px solid $brand-secondary;
   }
   .submit {
-    width: 8%;
+    width: 20%;
     @include replace-text('search.png');
   }
 }
@@ -96,7 +95,7 @@ input {
 
 .results-page {
   .search {
-    padding: 3% 20%;
+    padding: 0;
   }
 }
 
@@ -128,14 +127,13 @@ input {
 }
 
 .result {
-  margin: 1em 0;
+  margin: 0;
   float: left;
-  height: auto;
+  height: 300px;
   width: 100%;
+  padding: 1em;
+  background: lighten($brand-secondary, 27);
 }
-
-
-
 
 .content {
   padding: 0;
@@ -143,7 +141,6 @@ input {
 
 .results {
   padding: 0;
-  border-top: 1px solid $brand-secondary;
 }
 
 .btn {
