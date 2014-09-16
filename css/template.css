@@ -6150,7 +6150,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/bertie-logo.png?1410366036');
+  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6170,7 +6170,7 @@ header .parent-id a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/bsu-logo.png?1410362338');
+  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6239,7 +6239,7 @@ a:hover, a:focus {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../img/search.png?1410427364');
+  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6294,12 +6294,184 @@ input {
 }
 
 .result {
+  position: relative;
   margin: 0;
   float: left;
   height: 300px;
   width: 100%;
   padding: 1em;
-  background: #f8f7f6;
+}
+.result h3 {
+  font-size: 2em;
+}
+.result .more {
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  right: 10px;
+  padding: 0.5em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.result:nth-of-type(12n-11) {
+  background: #66bc29;
+  color: white;
+}
+.result:nth-of-type(12n-11) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-11) .more:hover {
+  color: #223e0e;
+  border-color: #223e0e;
+}
+
+.result:nth-of-type(12n-10) {
+  background: #0098cd;
+  color: white;
+}
+.result:nth-of-type(12n-10) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-10) .more:hover {
+  color: #002734;
+  border-color: #002734;
+}
+
+.result:nth-of-type(12n-9) {
+  background: #cf0360;
+  color: white;
+}
+.result:nth-of-type(12n-9) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-9) .more:hover {
+  color: #38011a;
+  border-color: #38011a;
+}
+
+.result:nth-of-type(12n-8) {
+  background: #7203cf;
+  color: white;
+}
+.result:nth-of-type(12n-8) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-8) .more:hover {
+  color: #1f0138;
+  border-color: #1f0138;
+}
+
+.result:nth-of-type(12n-7) {
+  background: #cf7203;
+  color: white;
+}
+.result:nth-of-type(12n-7) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-7) .more:hover {
+  color: #381f01;
+  border-color: #381f01;
+}
+
+.result:nth-of-type(12n-6) {
+  background: #bc3629;
+  color: white;
+}
+.result:nth-of-type(12n-6) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-6) .more:hover {
+  color: #3e120e;
+  border-color: #3e120e;
+}
+
+.result:nth-of-type(12n-5) {
+  background: #29afbc;
+  color: white;
+}
+.result:nth-of-type(12n-5) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-5) .more:hover {
+  color: #0e3a3e;
+  border-color: #0e3a3e;
+}
+
+.result:nth-of-type(12n-4) {
+  background: #29bc36;
+  color: white;
+}
+.result:nth-of-type(12n-4) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-4) .more:hover {
+  color: #0e3e12;
+  border-color: #0e3e12;
+}
+
+.result:nth-of-type(12n-3) {
+  background: #7f29bc;
+  color: white;
+}
+.result:nth-of-type(12n-3) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-3) .more:hover {
+  color: #2a0e3e;
+  border-color: #2a0e3e;
+}
+
+.result:nth-of-type(12n-2) {
+  background: #bc7f29;
+  color: white;
+}
+.result:nth-of-type(12n-2) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-2) .more:hover {
+  color: #3e2a0e;
+  border-color: #3e2a0e;
+}
+
+.result:nth-of-type(12n-1) {
+  background: #bc2966;
+  color: white;
+}
+.result:nth-of-type(12n-1) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n-1) .more:hover {
+  color: #3e0e22;
+  border-color: #3e0e22;
+}
+
+.result:nth-of-type(12n) {
+  background: #e3b40c;
+  color: white;
+}
+.result:nth-of-type(12n) .more {
+  border: 1px solid white;
+  color: white;
+}
+.result:nth-of-type(12n) .more:hover {
+  color: #524104;
+  border-color: #524104;
 }
 
 .content {
@@ -6308,36 +6480,6 @@ input {
 
 .results {
   padding: 0;
-}
-
-.btn {
-  padding: 1em;
-  width: 100%;
-  border: none;
-  background-color: #22314e;
-  color: white;
-}
-
-.buttons {
-  float: right;
-  color: white;
-  height: 100px;
-  padding: 0;
-}
-.buttons .btn {
-  height: 100px;
-  background-color: #22314e;
-}
-.buttons .btn:hover {
-  background-color: #5475b5;
-}
-
-.btn {
-  border: none;
-}
-.btn:focus {
-  border: none;
-  outline: none;
 }
 
 .modal-header {

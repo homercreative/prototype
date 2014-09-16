@@ -127,13 +127,173 @@ input {
 }
 
 .result {
+  position:relative;
   margin: 0;
   float: left;
   height: 300px;
   width: 100%;
   padding: 1em;
-  background: lighten($brand-secondary, 27);
+  h3{
+    font-size:2em;
+  }
+  .more{
+    position:absolute;
+    bottom: 10px;
+    width:50%;
+    right: 10px;
+    padding: 0.5em;
+    @include border-radius(4px);
+    border:none;
+    background-color:transparent;
+    color:$white;
+  }
 }
+
+.result:nth-of-type(12n-11){
+  background: $brand-success;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-success, 30);
+      border-color:darken($brand-success, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-10){
+  background: $brand-info;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-info, 30);
+      border-color:darken($brand-info, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-9){
+  background: $brand-danger;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-danger, 30);
+      border-color:darken($brand-danger, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-8){
+  background: $brand-purple;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-purple, 30);
+      border-color:darken($brand-purple, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-7){
+  background: $brand-orange;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-orange, 30);
+      border-color:darken($brand-orange, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-6){
+  background: $brand-red;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-red, 30);
+      border-color:darken($brand-red, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-5){
+  background: $brand-ter;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-ter, 30);
+      border-color:darken($brand-ter, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-4){
+  background: $brand-green;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-green, 30);
+      border-color:darken($brand-green, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-3){
+  background: $brand-purple-2;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-purple-2, 30);
+      border-color:darken($brand-purple-2, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-2){
+  background: $brand-orange-2;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-orange-2, 30);
+      border-color:darken($brand-orange-2, 30);
+    }
+  }
+}
+.result:nth-of-type(12n-1){
+  background: $brand-pink;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-pink, 30);
+      border-color:darken($brand-pink, 30);
+    }
+  }
+}
+.result:nth-of-type(12n){
+  background: $brand-yellow;
+  color:$white;
+  .more{
+    border:1px solid  $white;
+    color:$white;
+    &:hover{
+      color:darken($brand-yellow, 30);
+      border-color:darken($brand-yellow, 30);
+    }
+  }
+}
+
 
 .content {
   padding: 0;
@@ -141,37 +301,6 @@ input {
 
 .results {
   padding: 0;
-}
-
-.btn {
-  padding: 1em;
-  width: 100%;
-
-  border: none;
-  background-color: $brand-primary;
-  color: $white;
-}
-
-.buttons {
-  float: right;
-  color: $white;
-  height: 100px;
-  padding: 0;
-  .btn {
-    height: 100px;
-    background-color: $brand-primary;
-    &:hover {
-      background-color: lighten($brand-primary, 30);
-    }
-  }
-}
-
-.btn {
-  border: none;
-  &:focus {
-    border: none;
-    outline: none;
-  }
 }
 
 .modal-header {
