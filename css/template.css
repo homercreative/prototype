@@ -6134,10 +6134,6 @@ body {
   font-family: "Raleway", helvetica, arial, sans-serif;
 }
 
-a {
-  color: #beb2a6;
-}
-
 header {
   padding: 20px 20px 0 20px;
 }
@@ -6153,7 +6149,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
+  background-image: url('../img/bertie-logo.png?1410366036');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6164,14 +6160,14 @@ header .parent-id {
 header .parent-id a {
   text-decoration: none;
   display: block;
-  margin: 0 0.5em;
+  margin: 22px 0 0 0.8em;
   width: 60px;
   height: 60px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
+  background-image: url('../img/bsu-logo.png?1410362338');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6189,6 +6185,34 @@ header nav a {
 }
 header nav a:hover {
   color: #937f6b;
+}
+header nav a:hover span {
+  background: #beb2a6;
+}
+header nav span {
+  padding: .2em .5em;
+  background: #cf0360;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+a:hover, a:focus {
+  text-decoration: none;
 }
 
 .search {
@@ -6208,7 +6232,7 @@ header nav a:hover {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
+  background-image: url('../img/search.png?1410427364');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6218,11 +6242,10 @@ label {
 }
 
 input {
+  color: #1b232a;
+  font-family: "Raleway", helvetica, arial, sans-serif;
   background: none;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+  border: none;
   float: left;
   padding: 15px;
   height: 50px;
@@ -6242,32 +6265,25 @@ input {
   padding: 0 1.5em;
 }
 .categories a {
+  display: block;
   text-decoration: none;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid white;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.categories a:hover {
+  border-bottom: 1px solid #beb2a6;
 }
 .categories .active {
-  padding-bottom: 0.2em;
-  border-bottom: 3px solid #beb2a6;
+  border-bottom: 1px solid #1b232a;
 }
-
-.sidemenu {
-  background-color: #22314e;
-  padding: 0;
-  height: 100%;
-}
-.sidemenu .categories li {
-  width: 100%;
-  float: left;
-  display: block;
-}
-.sidemenu .categories a {
-  float: left;
-  width: 100%;
-  display: block;
-  color: white;
-  padding: 1em;
-}
-.sidemenu .categories a:hover {
-  background-color: #415e95;
+.categories .active:hover {
+  color: #1b232a;
+  border-bottom: 1px solid #1b232a;
 }
 
 .result {
