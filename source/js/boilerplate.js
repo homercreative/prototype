@@ -1,33 +1,3 @@
-/** Framework Function's **/
-
-function load(){
-    if(window.scripts.owl){
-        function owl(){
-            window.owl = $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            })
-        }
-        loadScript('plugins/owl.carousel.js', 'owl()')
-    }
-}
-
-
-
-
-
 function loadScript($scriptUrl, $loadedFunction){
     $.ajax({
         url: $scriptUrl,

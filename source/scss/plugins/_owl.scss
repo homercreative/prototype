@@ -145,6 +145,9 @@
   .owl-dots {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: -20px;
+    width: 100%;
 
     .owl-dot {
       display: inline-block;
@@ -273,4 +276,29 @@
       transform-style: preserve-3d;
     }
   }
+}
+.owl-pagination{
+  position: absolute;
+  width: 100%;
+  top: -30px;
+  text-align: center;
+  .owl-page{
+    display: inline-block;
+    padding: 0.5em;
+  }
+}
+
+.owl-dots {
+  text-align: center;
+}
+.owl-dot {
+  height: auto;
+  width: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+.owl-item {
+  text-align: center;
+  background-color: black;
+  color: white;
 }
