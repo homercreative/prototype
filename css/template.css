@@ -4286,6 +4286,8 @@ Copyright (c) 2014 Daniel Eden
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  animation-duration: .5s;
+  -webkit-animation-duration: .5s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -6148,7 +6150,7 @@ header .identity a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bertie-logo.png?1410549109');
+  background-image: url('../img/bertie-logo.png?1410366036');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6168,7 +6170,7 @@ header .parent-id a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/bsu-logo.png?1410549109');
+  background-image: url('../img/bsu-logo.png?1410362338');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -6237,7 +6239,7 @@ a:hover, a:focus {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('http://homercreative.github.io/prototype/img/search.png?1410549109');
+  background-image: url('../img/search.png?1410427364');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
