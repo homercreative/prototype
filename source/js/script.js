@@ -1,6 +1,10 @@
 $('document').ready(function(){
 
-
+    var closeModal = function($element){
+        var id = $element.parent().parent().parent().parent().attr('id');
+        $("#" + id).modal('hide');
+        $element.parent().parent().parent().removeClass('flipOutX');
+    };
     $('.result-block').click(function(){
         var id = $(this).attr('id');
         var value = id.replace('result', 'extra');
@@ -24,7 +28,12 @@ $('document').ready(function(){
         $(this).find('.number').html(number);
         number++;
     });
-
+    $('#close').click(function(e){
+        e.preventDefault();
+        var element = $(this);
+        element.parent().parent().parent().addClass('flipOutX');
+        setTimeout(closeModal, 2200, element);
+    });
 
         $(".owl-carousel").owlCarousel({
             items: 1,

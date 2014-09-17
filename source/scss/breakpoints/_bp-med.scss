@@ -31,3 +31,15 @@
 .result {
   width:25%;
 }
+.modal-dialog{
+  margin: 15% auto;
+  width:80%;
+  h4{
+    font-size:2em;
+  }
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+

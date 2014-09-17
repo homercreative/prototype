@@ -170,7 +170,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap's JavaScript req
 
     Modal.prototype.backdrop = function (callback) {
         var that = this
-        var animate = this.$element.hasClass('fade') ? 'fade' : ''
+        var animate = 'fade'
 
         if (this.isShown && this.options.backdrop) {
             var doAnimate = $.support.transition && animate
@@ -198,17 +198,16 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap's JavaScript req
                 callback()
 
         } else if (!this.isShown && this.$backdrop) {
-            this.$backdrop.removeClass('in')
+            this.$backdrop.removeClass('in');
 
             var callbackRemove = function () {
                 that.removeBackdrop()
                 callback && callback()
             }
-            $.support.transition && this.$element.hasClass('fade') ?
+
                 this.$backdrop
                     .one('bsTransitionEnd', callbackRemove)
-                    .emulateTransitionEnd(150) :
-                callbackRemove()
+                    .emulateTransitionEnd(150);
 
         } else if (callback) {
             callback()

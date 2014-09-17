@@ -229,7 +229,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap's JavaScript req
 
     Modal.prototype.backdrop = function (callback) {
         var that = this
-        var animate = this.$element.hasClass('fade') ? 'fade' : ''
+        var animate = 'fade'
 
         if (this.isShown && this.options.backdrop) {
             var doAnimate = $.support.transition && animate
@@ -257,17 +257,16 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap's JavaScript req
                 callback()
 
         } else if (!this.isShown && this.$backdrop) {
-            this.$backdrop.removeClass('in')
+            this.$backdrop.removeClass('in');
 
             var callbackRemove = function () {
                 that.removeBackdrop()
                 callback && callback()
             }
-            $.support.transition && this.$element.hasClass('fade') ?
+
                 this.$backdrop
                     .one('bsTransitionEnd', callbackRemove)
-                    .emulateTransitionEnd(150) :
-                callbackRemove()
+                    .emulateTransitionEnd(150);
 
         } else if (callback) {
             callback()
@@ -2424,7 +2423,11 @@ function loadFontKit($fontKit) {
 
 $('document').ready(function(){
 
-
+    var closeModal = function($element){
+        var id = $element.parent().parent().parent().parent().attr('id');
+        $("#" + id).modal('hide');
+        $element.parent().parent().parent().removeClass('flipOutX');
+    };
     $('.result-block').click(function(){
         var id = $(this).attr('id');
         var value = id.replace('result', 'extra');
@@ -2448,7 +2451,12 @@ $('document').ready(function(){
         $(this).find('.number').html(number);
         number++;
     });
-
+    $('#close').click(function(e){
+        e.preventDefault();
+        var element = $(this);
+        element.parent().parent().parent().addClass('flipOutX');
+        setTimeout(closeModal, 2200, element);
+    });
 
         $(".owl-carousel").owlCarousel({
             items: 1,
