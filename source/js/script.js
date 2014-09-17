@@ -28,7 +28,7 @@ $('document').ready(function(){
         $(this).find('.number').html(number);
         number++;
     });
-    $('#close').click(function(e){
+    $('.close').click(function(e){
         e.preventDefault();
         var element = $(this);
         element.parent().parent().parent().addClass('flipOutX');
