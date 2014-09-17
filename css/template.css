@@ -589,7 +589,7 @@ select[multiple].input-lg,
   overflow: hidden;
   *zoom: 1;
 }
-@media (min-width: 800px) {
+@media (min-width: 970px) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
@@ -6116,7 +6116,7 @@ Copyright (c) 2014 Daniel Eden
     width: 100%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 970px) {
   .modal-lg {
     width: 80%;
   }
@@ -6551,6 +6551,12 @@ input {
   color: #bc3629;
 }
 
+.number {
+  position: absolute;
+  bottom: 20px;
+  font-size: 24px;
+}
+
 /* ::Media queries */
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 30em) {
@@ -6583,8 +6589,11 @@ input {
   .result {
     width: 50%;
   }
+  .result h3 {
+    font-size: 1.2em;
+  }
 }
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 60.625em) {
   .col-m-1 {
     width: 10%;
   }
@@ -6626,7 +6635,7 @@ input {
   }
 
   .container {
-    min-width: 50em;
+    min-width: 60.625em;
   }
 
   .search {

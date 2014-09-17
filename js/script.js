@@ -2443,6 +2443,13 @@ $('document').ready(function(){
         window.location.href = (url + get + '');
     });
 
+    var number = 1;
+    $('.result-block').each(function(){
+        $(this).find('.number').html(number);
+        number++;
+    });
+
+
         $(".owl-carousel").owlCarousel({
             items: 1,
             loop: false,
