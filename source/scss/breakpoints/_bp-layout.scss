@@ -154,8 +154,7 @@ input {
     }
   }
 }
-
-.result:nth-of-type(12n-11){
+.result:nth-of-type(8n-7){
   background: $brand-success;
   color:$white;
   .more{
@@ -166,127 +165,7 @@ input {
     }
   }
 }
-.result:nth-of-type(12n-10){
-  background: $brand-info;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-info;
-    }
-  }
-}
-.result:nth-of-type(12n-9){
-  background: $brand-danger;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-danger;
-    }
-  }
-}
-.result:nth-of-type(12n-8){
-  background: $brand-purple;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-purple;
-    }
-  }
-}
-.result:nth-of-type(12n-7){
-  background: $brand-orange;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-orange;
-    }
-  }
-}
-.result:nth-of-type(12n-6){
-  background: $brand-red;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-red;
-    }
-  }
-}
-.result:nth-of-type(12n-5){
-  background: $brand-ter;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-ter;
-    }
-  }
-}
-.result:nth-of-type(12n-4) {
-  background: $brand-green;
-  color: $white;
-  .more {
-    border: 1px solid $white;
-    color: $white;
-    &:hover {
-      color: $brand-green;
-    }
-  }
-}
-.result:nth-of-type(12n-3){
-  background: $brand-purple-2;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-purple-2;
-    }
-  }
-}
-.result:nth-of-type(12n-2){
-  background: $brand-orange-2;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-orange-2;
-    }
-  }
-}
-.result:nth-of-type(12n-1){
-  background: $brand-pink;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-pink;
-    }
-  }
-}
-.result:nth-of-type(12n){
-  background: $brand-yellow;
-  color:$white;
-  .more{
-    border:1px solid  $white;
-    color:$white;
-    &:hover{
-      color:$brand-yellow;
-    }
-  }
-}
+
 
 
 .content {

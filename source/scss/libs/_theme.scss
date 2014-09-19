@@ -17,15 +17,33 @@ $brand-info:            rgba(#0098CD, 1);                     //Brand Blue
 $brand-warning:         rgba(#F5CF47, 1);                     //Brand orange
 $brand-danger:          rgba(#CF0360, 1);                     //Brand pink
 
-$brand-purple:          rgba(#7203cf ,1);
-$brand-orange:          rgba(#cf7203 ,1);
-$brand-red:             rgba(#bc3629 ,1);
-$brand-ter:             rgba(#29afbc,1);
-$brand-green:           rgba(#29bc36,1);
-$brand-pink:            rgba(#bc2966,1);
-$brand-purple-2:        rgba(#7f29bc,1);
-$brand-orange-2:        rgba(#bc7f29,1);
-$brand-yellow:        rgba(#e3b40c,1);
+// Colour shades for dark blue
+
+$dark-blue-shade-1:     rgba(65,35,91,1);
+$dark-blue-shade-2:     rgba(45,39,101,1);
+$dark-blue-shade-3:     rgba(39,87,101,1);
+$dark-blue-shade-4:     rgba(36,91,77,1);
+
+// Colour Shades for pink
+
+$pink-shade-1: rgba(220,132,61,1);
+$pink-shade-2: rgba(230,68,38,1);
+$pink-shade-3: rgba(179,19,230,1);
+$pink-shade-4: rgba(86,66,220,1);
+
+// Colour Shades for Green
+
+$green-shade-1: rgba(49,102,186,1);
+$green-shade-2: rgba(30,188,196,1);
+$green-shade-3: rgba(50,196,14,1);
+$green-shade-4: rgba(162,186,44,1);
+
+// Colour Shades for Light Blue
+
+$light-blue-shade-1: rgba(82,87,218,1);
+$light-blue-shade-2: rgba(11,97,228,1);
+$light-blue-shade-3: rgba(11,228,203,1);
+$light-blue-shade-4: rgba(11,218,144,1);
 
 $white:                 rgba(#FFF, 1);                        // White
 $text-color:            lighten(#000, 46.7%);
