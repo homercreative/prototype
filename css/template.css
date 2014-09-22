@@ -6295,6 +6295,7 @@ input {
 
 .result {
   position: relative;
+  color: white;
   margin: 0;
   float: left;
   height: 300px;
@@ -6317,6 +6318,7 @@ input {
   border: none;
   background-color: transparent;
   color: white;
+  border: 1px solid white;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -6328,148 +6330,53 @@ input {
   background-color: white;
 }
 
-.result:nth-of-type(12n-11) {
-  background: #66bc29;
-  color: white;
+#all .result:nth-of-type(8n-7) {
+  background: #22314e;
 }
-.result:nth-of-type(12n-11) .more {
-  border: 1px solid white;
-  color: white;
+#all .result:nth-of-type(8n-7) .more:hover {
+  color: #22314e;
 }
-.result:nth-of-type(12n-11) .more:hover {
-  color: #66bc29;
+#all .result:nth-of-type(8n-6) {
+  background: #275765;
 }
-
-.result:nth-of-type(12n-10) {
-  background: #0098cd;
-  color: white;
+#all .result:nth-of-type(8n-6) .more:hover {
+  color: #275765;
 }
-.result:nth-of-type(12n-10) .more {
-  border: 1px solid white;
-  color: white;
+#all .result:nth-of-type(8n-5) {
+  background: #245b4d;
 }
-.result:nth-of-type(12n-10) .more:hover {
-  color: #0098cd;
+#all .result:nth-of-type(8n-5) .more:hover {
+  color: #245b4d;
 }
-
-.result:nth-of-type(12n-9) {
-  background: #cf0360;
-  color: white;
+#all .result:nth-of-type(8n-4) {
+  background: #22314e;
 }
-.result:nth-of-type(12n-9) .more {
-  border: 1px solid white;
-  color: white;
+#all .result:nth-of-type(8n-4) .more:hover {
+  color: #22314e;
 }
-.result:nth-of-type(12n-9) .more:hover {
-  color: #cf0360;
+#all .result:nth-of-type(8n-3) {
+  background: #275765;
 }
-
-.result:nth-of-type(12n-8) {
-  background: #7203cf;
-  color: white;
+#all .result:nth-of-type(8n-3) .more:hover {
+  color: #275765;
 }
-.result:nth-of-type(12n-8) .more {
-  border: 1px solid white;
-  color: white;
+#all .result:nth-of-type(8n-2) {
+  background: #41235b;
 }
-.result:nth-of-type(12n-8) .more:hover {
-  color: #7203cf;
+#all .result:nth-of-type(8n-2) .more:hover {
+  color: #41235b;
 }
-
-.result:nth-of-type(12n-7) {
-  background: #cf7203;
-  color: white;
+#all .result:nth-of-type(8n-1) {
+  background: #275765;
 }
-.result:nth-of-type(12n-7) .more {
-  border: 1px solid white;
-  color: white;
+#all .result:nth-of-type(8n-1) .more:hover {
+  color: #275765;
 }
-.result:nth-of-type(12n-7) .more:hover {
-  color: #cf7203;
+#all .result:nth-of-type(8n) {
+  background: #245b4d;
 }
-
-.result:nth-of-type(12n-6) {
-  background: #bc3629;
-  color: white;
-}
-.result:nth-of-type(12n-6) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-6) .more:hover {
-  color: #bc3629;
-}
-
-.result:nth-of-type(12n-5) {
-  background: #29afbc;
-  color: white;
-}
-.result:nth-of-type(12n-5) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-5) .more:hover {
-  color: #29afbc;
-}
-
-.result:nth-of-type(12n-4) {
-  background: #29bc36;
-  color: white;
-}
-.result:nth-of-type(12n-4) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-4) .more:hover {
-  color: #29bc36;
-}
-
-.result:nth-of-type(12n-3) {
-  background: #7f29bc;
-  color: white;
-}
-.result:nth-of-type(12n-3) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-3) .more:hover {
-  color: #7f29bc;
-}
-
-.result:nth-of-type(12n-2) {
-  background: #bc7f29;
-  color: white;
-}
-.result:nth-of-type(12n-2) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-2) .more:hover {
-  color: #bc7f29;
-}
-
-.result:nth-of-type(12n-1) {
-  background: #bc2966;
-  color: white;
-}
-.result:nth-of-type(12n-1) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n-1) .more:hover {
-  color: #bc2966;
-}
-
-.result:nth-of-type(12n) {
-  background: #e3b40c;
-  color: white;
-}
-.result:nth-of-type(12n) .more {
-  border: 1px solid white;
-  color: white;
-}
-.result:nth-of-type(12n) .more:hover {
-  color: #e3b40c;
+#all .result:nth-of-type(8n) .more:hover {
+  color: #245b4d;
 }
 
 .content {
