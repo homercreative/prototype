@@ -184,10 +184,10 @@ input {
     }
   }
   .result:nth-of-type(8n-4) {
-    background: $dark-blue-shade-4;
+    background: $dark-blue-shade-7;
     .more {
       &:hover {
-        color: $dark-blue-shade-4;
+        color: $dark-blue-shade-7;
       }
     }
   }
@@ -200,10 +200,10 @@ input {
     }
   }
   .result:nth-of-type(8n-2) {
-    background: $dark-blue-shade-7;
+    background: $dark-blue-shade-4;
     .more {
       &:hover {
-        color: $dark-blue-shade-7;
+        color: $dark-blue-shade-4;
       }
     }
 

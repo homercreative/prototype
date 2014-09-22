@@ -6349,10 +6349,10 @@ input {
   color: #10726d;
 }
 #all .result:nth-of-type(8n-4) {
-  background: #0bda72;
+  background: #41225b;
 }
 #all .result:nth-of-type(8n-4) .more:hover {
-  color: #0bda72;
+  color: #41225b;
 }
 #all .result:nth-of-type(8n-3) {
   background: #275765;
@@ -6361,10 +6361,10 @@ input {
   color: #275765;
 }
 #all .result:nth-of-type(8n-2) {
-  background: #41225b;
+  background: #0bda72;
 }
 #all .result:nth-of-type(8n-2) .more:hover {
-  color: #41225b;
+  color: #0bda72;
 }
 #all .result:nth-of-type(8n-1) {
   background: #2d2765;
