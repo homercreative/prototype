@@ -160,10 +160,10 @@ input {
 
 #all {
   .result:nth-of-type(8n-7) {
-    background: $brand-primary;
+    background:$dark-blue-shade-1;
     .more {
       &:hover {
-        color: $brand-primary;
+        color: $dark-blue-shade-1;
       }
     }
   }
@@ -176,6 +176,14 @@ input {
     }
   }
   .result:nth-of-type(8n-5) {
+    background: $dark-blue-shade-2;
+    .more {
+      &:hover {
+        color: $dark-blue-shade-2;
+      }
+    }
+  }
+  .result:nth-of-type(8n-4) {
     background: $dark-blue-shade-4;
     .more {
       &:hover {
@@ -183,49 +191,243 @@ input {
       }
     }
   }
-  .result:nth-of-type(8n-4) {
-    background: $brand-primary;
-    .more {
-      &:hover {
-        color: $brand-primary;
-      }
-    }
-  }
   .result:nth-of-type(8n-3) {
-    background: $dark-blue-shade-3;
+    background: $dark-blue-shade-5;
     .more {
       &:hover {
-        color: $dark-blue-shade-3;
+        color: $dark-blue-shade-5;
       }
     }
   }
   .result:nth-of-type(8n-2) {
-    background: $dark-blue-shade-1;
+    background: $dark-blue-shade-7;
     .more {
       &:hover {
-        color: $dark-blue-shade-1;
+        color: $dark-blue-shade-7;
       }
     }
 
   }
   .result:nth-of-type(8n-1) {
-    background: $dark-blue-shade-3;
+    background: $dark-blue-shade-6;
     .more {
       &:hover {
-        color: $dark-blue-shade-3;
+        color: $dark-blue-shade-6;
       }
     }
   }
   .result:nth-of-type(8n) {
-    background: $dark-blue-shade-4;
+    background: $dark-blue-shade-8;
     .more {
       &:hover {
-        color: $dark-blue-shade-4;
+        color: $dark-blue-shade-8;
       }
     }
   }
 }
 
+#policy {
+  .result:nth-of-type(8n-7) {
+    background:$pink-shade-1;
+    .more {
+      &:hover {
+        color: $pink-shade-1;
+      }
+    }
+  }
+  .result:nth-of-type(8n-6) {
+    background: $pink-shade-3;
+    .more {
+      &:hover {
+        color: $pink-shade-3;
+      }
+    }
+  }
+  .result:nth-of-type(8n-5) {
+    background: $pink-shade-2;
+    .more {
+      &:hover {
+        color: $pink-shade-2;
+      }
+    }
+  }
+  .result:nth-of-type(8n-4) {
+    background: $pink-shade-4;
+    .more {
+      &:hover {
+        color: $pink-shade-4;
+      }
+    }
+  }
+  .result:nth-of-type(8n-3) {
+    background: $pink-shade-5;
+    .more {
+      &:hover {
+        color: $pink-shade-5;
+      }
+    }
+  }
+  .result:nth-of-type(8n-2) {
+    background: $pink-shade-7;
+    .more {
+      &:hover {
+        color: $pink-shade-7;
+      }
+    }
+
+  }
+  .result:nth-of-type(8n-1) {
+    background: $pink-shade-6;
+    .more {
+      &:hover {
+        color: $pink-shade-6;
+      }
+    }
+  }
+  .result:nth-of-type(8n) {
+    background: $pink-shade-8;
+    .more {
+      &:hover {
+        color: $pink-shade-8;
+      }
+    }
+  }
+}
+
+#research {
+  .result:nth-of-type(8n-7) {
+    background:$green-shade-1;
+    .more {
+      &:hover {
+        color: $green-shade-1;
+      }
+    }
+  }
+  .result:nth-of-type(8n-6) {
+    background: $green-shade-3;
+    .more {
+      &:hover {
+        color: $green-shade-3;
+      }
+    }
+  }
+  .result:nth-of-type(8n-5) {
+    background: $green-shade-2;
+    .more {
+      &:hover {
+        color: $green-shade-2;
+      }
+    }
+  }
+  .result:nth-of-type(8n-4) {
+    background: $green-shade-4;
+    .more {
+      &:hover {
+        color: $green-shade-4;
+      }
+    }
+  }
+  .result:nth-of-type(8n-3) {
+    background: $green-shade-5;
+    .more {
+      &:hover {
+        color: $green-shade-5;
+      }
+    }
+  }
+  .result:nth-of-type(8n-2) {
+    background: $green-shade-7;
+    .more {
+      &:hover {
+        color: $green-shade-7;
+      }
+    }
+
+  }
+  .result:nth-of-type(8n-1) {
+    background: $green-shade-6;
+    .more {
+      &:hover {
+        color: $green-shade-6;
+      }
+    }
+  }
+  .result:nth-of-type(8n) {
+    background: $green-shade-8;
+    .more {
+      &:hover {
+        color: $green-shade-8;
+      }
+    }
+  }
+}
+#comment{
+  .result:nth-of-type(8n-7) {
+    background:$light-blue-shade-1;
+    .more {
+      &:hover {
+        color: $light-blue-shade-1;
+      }
+    }
+  }
+  .result:nth-of-type(8n-6) {
+    background: $light-blue-shade-3;
+    .more {
+      &:hover {
+        color: $light-blue-shade-3;
+      }
+    }
+  }
+  .result:nth-of-type(8n-5) {
+    background: $light-blue-shade-2;
+    .more {
+      &:hover {
+        color: $light-blue-shade-2;
+      }
+    }
+  }
+  .result:nth-of-type(8n-4) {
+    background: $light-blue-shade-4;
+    .more {
+      &:hover {
+        color: $light-blue-shade-4;
+      }
+    }
+  }
+  .result:nth-of-type(8n-3) {
+    background: $light-blue-shade-5;
+    .more {
+      &:hover {
+        color: $light-blue-shade-5;
+      }
+    }
+  }
+  .result:nth-of-type(8n-2) {
+    background: $light-blue-shade-7;
+    .more {
+      &:hover {
+        color: $light-blue-shade-7;
+      }
+    }
+
+  }
+  .result:nth-of-type(8n-1) {
+    background: $light-blue-shade-6;
+    .more {
+      &:hover {
+        color: $light-blue-shade-6;
+      }
+    }
+  }
+  .result:nth-of-type(8n) {
+    background: $light-blue-shade-8;
+    .more {
+      &:hover {
+        color: $light-blue-shade-8;
+      }
+    }
+  }
+}
 .content {
   padding: 0;
 }

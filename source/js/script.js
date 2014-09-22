@@ -11,6 +11,15 @@ $('document').ready(function(){
         var element = $('#' + value);
         element.modal('show');
     });
+    $('.navlink').click(function(){
+       $('.navlink').each(function(){
+           $(this).removeClass('active')
+       });
+
+        $(this).addClass('active');
+        var text = $(this).text();
+        $('body').attr('id',text.toLowerCase().replace(/ /g, '-'));
+    });
     $('#exportButton').click(function(){
         $('#cart').modal('hide');
         $('#export').modal('show');
