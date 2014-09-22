@@ -69,6 +69,7 @@ textarea {
   resize: vertical;
 }
 
+/**/
 [class^="col-"] {
   float: left;
   padding: 0 10px;
