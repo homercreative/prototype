@@ -6404,10 +6404,10 @@ input {
   color: #807906;
 }
 #policy .result:nth-of-type(8n-3) {
-  background: #dcbc37;
+  background: #ff5395;
 }
 #policy .result:nth-of-type(8n-3) .more:hover {
-  color: #dcbc37;
+  color: #ff5395;
 }
 #policy .result:nth-of-type(8n-2) {
   background: #e64426;
@@ -6459,10 +6459,10 @@ input {
   color: #3ebadc;
 }
 #research .result:nth-of-type(8n-2) {
-  background: #00f996;
+  background: #6b8c93;
 }
 #research .result:nth-of-type(8n-2) .more:hover {
-  color: #00f996;
+  color: #6b8c93;
 }
 #research .result:nth-of-type(8n-1) {
   background: #007a49;
