@@ -6283,9 +6283,6 @@ input {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.categories .all .navlink {
-  border-bottom: 1px solid #0098cd;
-}
 .categories .all .navlink:hover {
   color: #0098cd;
   border-bottom: 1px solid #0098cd;
