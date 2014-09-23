@@ -6283,15 +6283,36 @@ input {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.categories a:hover {
-  border-bottom: 1px solid #beb2a6;
+.categories .all .navlink {
+  border-bottom: 1px solid #0098cd;
+}
+.categories .all .navlink:hover {
+  color: #0098cd;
+  border-bottom: 1px solid #0098cd;
+}
+.categories .all .active {
+  border-bottom: 1px solid #0098cd;
+}
+.categories .policy .navlink:hover {
+  color: #cf0360;
+  border-bottom: 1px solid #cf0360;
 }
 .categories .active {
-  border-bottom: 1px solid #1b232a;
+  border-bottom: 1px solid #cf0360;
 }
-.categories .active:hover {
-  color: #1b232a;
-  border-bottom: 1px solid #1b232a;
+.categories .research .navlink:hover {
+  color: #66bc29;
+  border-bottom: 1px solid #66bc29;
+}
+.categories .active {
+  border-bottom: 1px solid #66bc29;
+}
+.categories .comment .navlink:hover {
+  color: #f5cf47;
+  border-bottom: 1px solid #f5cf47;
+}
+.categories .active {
+  border-bottom: 1px solid #f5cf47;
 }
 
 .result {
