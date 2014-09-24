@@ -6162,10 +6162,10 @@ header .parent-id {
 header .parent-id a {
   text-decoration: none;
   display: block;
-  margin: 14px 0 0 0.8em;
+  margin: 0 0 0 0.8em;
   background-size: 100%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   float: left;
   text-indent: -119988px;
   overflow: hidden;
@@ -6294,21 +6294,21 @@ input {
   color: #cf0360;
   border-bottom: 1px solid #cf0360;
 }
-.categories .active {
+.categories .policy .active {
   border-bottom: 1px solid #cf0360;
 }
 .categories .research .navlink:hover {
   color: #66bc29;
   border-bottom: 1px solid #66bc29;
 }
-.categories .active {
+.categories .research .active {
   border-bottom: 1px solid #66bc29;
 }
 .categories .comment .navlink:hover {
   color: #f5cf47;
   border-bottom: 1px solid #f5cf47;
 }
-.categories .active {
+.categories .comment .active {
   border-bottom: 1px solid #f5cf47;
 }
 
@@ -6589,13 +6589,13 @@ input {
 
 .owl-dots {
   width: 100%;
-  background-color: #6D5E51;
-  color: white;
+  background-color: white;
+  color: #6d5e51;
   font-size: 1.5em;
   font-weight: bold;
 }
 .owl-dots .active {
-  color: #bc3629;
+  color: #22314e;
 }
 
 .number {
@@ -6623,20 +6623,15 @@ input {
   outline: 0;
 }
 
+.search input {
+  padding: 6px;
+}
+
 /* ::Media queries */
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 30em) {
-  header .identity a {
-    width: 250px;
-    height: 82px;
-  }
   header .parent-id {
     float: left;
-  }
-  header .parent-id a {
-    width: 60px;
-    height: 60px;
-    margin-top: 22px;
   }
   header nav {
     clear: none;
