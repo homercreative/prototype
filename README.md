@@ -1,4 +1,4 @@
-The Grunt Web Designers Boilerplate
+Bertie Design
 -----------------------------------
 
-*Using Sass and javascript*
+*Bertie Design using Sass and javascript*
