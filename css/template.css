@@ -6350,199 +6350,199 @@ input {
 }
 
 #research .result:nth-of-type(8n-7) {
-  background: #64133d;
+  background: #7f2347;
 }
 #research .result:nth-of-type(8n-7) .more:hover {
-  color: #64133d;
+  color: #7f2347;
 }
 #research .result:nth-of-type(8n-6) {
-  background: #6020e6;
+  background: #66bc29;
 }
 #research .result:nth-of-type(8n-6) .more:hover {
-  color: #6020e6;
+  color: #66bc29;
 }
 #research .result:nth-of-type(8n-5) {
-  background: #10726d;
+  background: #cf0360;
 }
 #research .result:nth-of-type(8n-5) .more:hover {
-  color: #10726d;
+  color: #cf0360;
 }
 #research .result:nth-of-type(8n-4) {
-  background: #41225b;
+  background: #22314e;
 }
 #research .result:nth-of-type(8n-4) .more:hover {
-  color: #41225b;
+  color: #22314e;
 }
 #research .result:nth-of-type(8n-3) {
-  background: #275765;
+  background: #0098cd;
 }
 #research .result:nth-of-type(8n-3) .more:hover {
-  color: #275765;
+  color: #0098cd;
 }
 #research .result:nth-of-type(8n-2) {
-  background: #0bda72;
+  background: #00ad68;
 }
 #research .result:nth-of-type(8n-2) .more:hover {
-  color: #0bda72;
+  color: #00ad68;
 }
 #research .result:nth-of-type(8n-1) {
-  background: #2d2765;
+  background: #f5cf47;
 }
 #research .result:nth-of-type(8n-1) .more:hover {
-  color: #2d2765;
+  color: #f5cf47;
 }
 #research .result:nth-of-type(8n) {
-  background: #d730f1;
+  background: #c79316;
 }
 #research .result:nth-of-type(8n) .more:hover {
-  color: #d730f1;
+  color: #c79316;
 }
 
 #policy .result:nth-of-type(8n-7) {
-  background: #cf0360;
+  background: #7f2347;
 }
 #policy .result:nth-of-type(8n-7) .more:hover {
-  color: #cf0360;
+  color: #7f2347;
 }
 #policy .result:nth-of-type(8n-6) {
-  background: #8e2cba;
+  background: #66bc29;
 }
 #policy .result:nth-of-type(8n-6) .more:hover {
-  color: #8e2cba;
+  color: #66bc29;
 }
 #policy .result:nth-of-type(8n-5) {
-  background: #e66716;
+  background: #cf0360;
 }
 #policy .result:nth-of-type(8n-5) .more:hover {
-  color: #e66716;
+  color: #cf0360;
 }
 #policy .result:nth-of-type(8n-4) {
-  background: #807906;
+  background: #00ad68;
 }
 #policy .result:nth-of-type(8n-4) .more:hover {
-  color: #807906;
+  color: #00ad68;
 }
 #policy .result:nth-of-type(8n-3) {
-  background: #ff5395;
+  background: #0098cd;
 }
 #policy .result:nth-of-type(8n-3) .more:hover {
-  color: #ff5395;
+  color: #0098cd;
 }
 #policy .result:nth-of-type(8n-2) {
-  background: #e64426;
+  background: #22314e;
 }
 #policy .result:nth-of-type(8n-2) .more:hover {
-  color: #e64426;
+  color: #22314e;
 }
 #policy .result:nth-of-type(8n-1) {
-  background: #b313e6;
+  background: #f5cf47;
 }
 #policy .result:nth-of-type(8n-1) .more:hover {
-  color: #b313e6;
+  color: #f5cf47;
 }
 #policy .result:nth-of-type(8n) {
-  background: #ba9432;
+  background: #c79316;
 }
 #policy .result:nth-of-type(8n) .more:hover {
-  color: #ba9432;
+  color: #c79316;
 }
 
 #all .result:nth-of-type(8n-7) {
-  background: #00ad68;
+  background: #7f2347;
 }
 #all .result:nth-of-type(8n-7) .more:hover {
-  color: #00ad68;
+  color: #7f2347;
 }
 #all .result:nth-of-type(8n-6) {
-  background: #81c418;
+  background: #66bc29;
 }
 #all .result:nth-of-type(8n-6) .more:hover {
-  color: #81c418;
+  color: #66bc29;
 }
 #all .result:nth-of-type(8n-5) {
-  background: #1553c4;
+  background: #cf0360;
 }
 #all .result:nth-of-type(8n-5) .more:hover {
-  color: #1553c4;
+  color: #cf0360;
 }
 #all .result:nth-of-type(8n-4) {
-  background: #098ddc;
+  background: #00ad68;
 }
 #all .result:nth-of-type(8n-4) .more:hover {
-  color: #098ddc;
+  color: #00ad68;
 }
 #all .result:nth-of-type(8n-3) {
-  background: #3ebadc;
+  background: #0098cd;
 }
 #all .result:nth-of-type(8n-3) .more:hover {
-  color: #3ebadc;
+  color: #0098cd;
 }
 #all .result:nth-of-type(8n-2) {
-  background: #6b8c93;
+  background: #22314e;
 }
 #all .result:nth-of-type(8n-2) .more:hover {
-  color: #6b8c93;
+  color: #22314e;
 }
 #all .result:nth-of-type(8n-1) {
-  background: #007a49;
+  background: #f5cf47;
 }
 #all .result:nth-of-type(8n-1) .more:hover {
-  color: #007a49;
+  color: #f5cf47;
 }
 #all .result:nth-of-type(8n) {
-  background: #1c4047;
+  background: #c79316;
 }
 #all .result:nth-of-type(8n) .more:hover {
-  color: #1c4047;
+  color: #c79316;
 }
 
 #comment .result:nth-of-type(8n-7) {
-  background: #0098cd;
+  background: #7f2347;
 }
 #comment .result:nth-of-type(8n-7) .more:hover {
-  color: #0098cd;
+  color: #7f2347;
 }
 #comment .result:nth-of-type(8n-6) {
-  background: #0b61e4;
+  background: #66bc29;
 }
 #comment .result:nth-of-type(8n-6) .more:hover {
-  color: #0b61e4;
+  color: #66bc29;
 }
 #comment .result:nth-of-type(8n-5) {
-  background: #5257da;
+  background: #cf0360;
 }
 #comment .result:nth-of-type(8n-5) .more:hover {
-  color: #5257da;
+  color: #cf0360;
 }
 #comment .result:nth-of-type(8n-4) {
-  background: #d51544;
+  background: #00ad68;
 }
 #comment .result:nth-of-type(8n-4) .more:hover {
-  color: #d51544;
+  color: #00ad68;
 }
 #comment .result:nth-of-type(8n-3) {
-  background: #0d6380;
+  background: #0098cd;
 }
 #comment .result:nth-of-type(8n-3) .more:hover {
-  color: #0d6380;
+  color: #0098cd;
 }
 #comment .result:nth-of-type(8n-2) {
-  background: #21653b;
+  background: #22314e;
 }
 #comment .result:nth-of-type(8n-2) .more:hover {
-  color: #21653b;
+  color: #22314e;
 }
 #comment .result:nth-of-type(8n-1) {
-  background: #0be4cb;
+  background: #f5cf47;
 }
 #comment .result:nth-of-type(8n-1) .more:hover {
-  color: #0be4cb;
+  color: #f5cf47;
 }
 #comment .result:nth-of-type(8n) {
-  background: #5a1465;
+  background: #c79316;
 }
 #comment .result:nth-of-type(8n) .more:hover {
-  color: #5a1465;
+  color: #c79316;
 }
 
 .content {
