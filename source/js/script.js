@@ -4,7 +4,7 @@ $('document').ready(function(){
 
     var number = 1;
     var resultBlock = $('.result-block');
-
+    $('body').attr('id','all');
     // Modal close animation
 
     var closeModal = function($element){
